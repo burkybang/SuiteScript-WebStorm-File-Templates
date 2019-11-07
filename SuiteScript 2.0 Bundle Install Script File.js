@@ -13,6 +13,20 @@
 define([],
   
   function () {
+  
+    /**
+     * beforeInstall event handler
+     * @param {Object} params
+     * @param {number} params.version - The version of the bundle that is being installed
+     * @return {void}
+     */
+    function beforeInstall(params) {
+      try {
+        log.audit('${PROJECT_NAME}', 'beforeInstall');
+      } catch (e) {
+        log.error('beforeInstall', JSON.stringify(e));
+      }
+    }
     
     /**
      * afterInstall event handler
@@ -25,6 +39,21 @@ define([],
         log.audit('${PROJECT_NAME}', 'afterInstall');
       } catch (e) {
         log.error('afterInstall', JSON.stringify(e));
+      }
+    }
+  
+    /**
+     * beforeUpdate event handler
+     * @param {Object} params
+     * @param {number} params.fromVersion - The version of the bundle that is currently installed
+     * @param {number} params.toVersion - The version of the bundle that is being installed
+     * @return {void}
+     */
+    function beforeUpdate(params) {
+      try {
+        log.audit('${PROJECT_NAME}', 'beforeUpdate');
+      } catch (e) {
+        log.error('beforeUpdate', JSON.stringify(e));
       }
     }
     
@@ -42,21 +71,7 @@ define([],
         log.error('afterUpdate', JSON.stringify(e));
       }
     }
-    
-    /**
-     * beforeInstall event handler
-     * @param {Object} params
-     * @param {number} params.version - The version of the bundle that is being installed
-     * @return {void}
-     */
-    function beforeInstall(params) {
-      try {
-        log.audit('${PROJECT_NAME}', 'beforeInstall');
-      } catch (e) {
-        log.error('beforeInstall', JSON.stringify(e));
-      }
-    }
-    
+  
     /**
      * beforeUninstall event handler
      * @param {Object} params
@@ -71,27 +86,12 @@ define([],
       }
     }
     
-    /**
-     * beforeUpdate event handler
-     * @param {Object} params
-     * @param {number} params.fromVersion - The version of the bundle that is currently installed
-     * @param {number} params.toVersion - The version of the bundle that is being installed
-     * @return {void}
-     */
-    function beforeUpdate(params) {
-      try {
-        log.audit('${PROJECT_NAME}', 'beforeUpdate');
-      } catch (e) {
-        log.error('beforeUpdate', JSON.stringify(e));
-      }
-    }
-    
     return {
-      // afterInstall: afterInstall,
-      // afterUpdate: afterUpdate,
       // beforeInstall: beforeInstall,
-      // beforeUninstall: beforeUninstall,
+      // afterInstall: afterInstall,
       // beforeUpdate: beforeUpdate,
+      // afterUpdate: afterUpdate,
+      // beforeUninstall: beforeUninstall,
     };
     
   }
