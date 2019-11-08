@@ -37,7 +37,7 @@ define([],
      * @param {string} context.fieldId - The internal ID of the field being validated
      * @param {string} [context.lineNum=undefined] - The index of the line if the field is in a sublist or matrix
      * @param {string} [context.columnNum=undefined] - The index of the column if the field is in a matrix
-     * @return {Boolean} - true if the field is valid. Boolean false to prevent the field value from changing
+     * @return {Boolean} - Return true if the field is valid or false to prevent the field value from changing
      */
     function validateField(context) {
       try {
@@ -102,7 +102,7 @@ define([],
      * @param {Object} context
      * @param {Record} context.currentRecord - The current record the user is manipulating in the UI
      * @param {string} context.sublistId - The internal ID of the sublist
-     * @return {Boolean} - true if the sublist line is valid. Boolean false to reject the operation
+     * @return {Boolean} - Return true if the sublist line is valid or false to reject the operation
      */
     function validateLine(context) {
       try {
@@ -118,7 +118,7 @@ define([],
      * @param {Object} context
      * @param {Record} context.currentRecord - The current record the user is manipulating in the UI
      * @param {string} context.sublistId - The internal ID of the sublist
-     * @return {Boolean} - Boolean true if the sublist line is valid. Boolean false to block the insert
+     * @return {Boolean} - Return true if the sublist line is valid or false to block the insert
      */
     function validateInsert(context) {
       try {
@@ -134,7 +134,7 @@ define([],
      * @param {Object} context
      * @param {Record} context.currentRecord - The current record the user is manipulating in the UI
      * @param {string} context.sublistId - The internal ID of the sublist
-     * @return {Boolean} - true if the sublist line is valid. Boolean false to block the removal
+     * @return {Boolean} - Return true if the sublist line is valid or false to block the removal
      */
     function validateDelete(context) {
       try {
@@ -164,7 +164,7 @@ define([],
      * saveRecord event handler
      * @param {Object} context
      * @param {Record} context.currentRecord - The current record the user is manipulating in the UI
-     * @return {Boolean} - true if the record is valid. Boolean false to suppress form submission
+     * @return {Boolean} - Return true if the record is valid or false to suppress form submission
      */
     function saveRecord(context) {
       try {
