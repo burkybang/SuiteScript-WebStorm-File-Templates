@@ -67,8 +67,8 @@ define([],
     
     return {
       getInputData: getInputData,
-      // map: map,
-      // reduce: reduce,
+      map: map,
+      reduce: reduce,
       summarize: summarize,
     };
     
