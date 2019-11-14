@@ -13,12 +13,13 @@
 define([],
   
   function () {
-    
+  
     /**
      * getInputData event handler
-     * @returns {*[]|Object|search.Search}
+     * @param {InputContext} context
+     * @returns {*[]|Object|search.Search|InputContext|file.File|query.Query}
      */
-    function getInputData() {
+    function getInputData(context) {
       try {
         log.audit('${PROJECT_NAME}', 'getInputData');
       } catch (e) {
