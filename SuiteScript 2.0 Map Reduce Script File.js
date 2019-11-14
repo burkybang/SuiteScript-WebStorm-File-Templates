@@ -16,7 +16,7 @@ define([],
     
     /**
      * getInputData event handler
-     * @return {*[]|Object|Search}
+     * @return {*[]|Object|search.Search}
      */
     function getInputData() {
       try {
