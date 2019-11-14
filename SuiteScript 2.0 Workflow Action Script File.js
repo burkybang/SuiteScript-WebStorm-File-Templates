@@ -19,7 +19,7 @@ define([],
      * @param {Object} context
      * @param {Record} context.newRecord - The new record. Saving is not permitted
      * @param {Record} context.oldRecord - The old record. Saving is not permitted
-     * @return {void}
+     * @returns {void}
      */
     function onAction(context) {
       try {

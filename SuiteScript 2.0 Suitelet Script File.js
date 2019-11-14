@@ -19,7 +19,7 @@ define([],
      * @param {Object} context
      * @param {ServerRequest} context.request - The incoming request object
      * @param {ServerResponse} context.response - The outgoing response object
-     * @return {void}
+     * @returns {void}
      */
     function onRequest(context) {
       try {

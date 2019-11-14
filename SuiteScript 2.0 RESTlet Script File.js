@@ -17,7 +17,7 @@ define([],
     /**
      * get event handler
      * @param {Object} requestParams - The parameters from the HTTP request URL as key-value pairs
-     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
+     * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
     function get(requestParams) {
@@ -32,7 +32,7 @@ define([],
      * post event handler
      * @param {string|Object} requestBody - Request body is a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
-     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
+     * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
     function post(requestBody) {
@@ -47,7 +47,7 @@ define([],
      * put event handler
      * @param {string|Object} requestBody - Request body is a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
-     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
+     * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
     function put(requestBody) {
@@ -61,7 +61,7 @@ define([],
     /**
      * delete event handler
      * @param {Object} requestParams - The parameters from the HTTP request URL as key-value pairs
-     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
+     * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
     function _delete(requestParams) {

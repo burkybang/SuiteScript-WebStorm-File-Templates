@@ -19,7 +19,7 @@ define([],
      * @param {Object} context
      * @param {string} context.type - The context in which the script is executed.
      * Values are reflected in the context.InvocationType enum
-     * @return {void}
+     * @returns {void}
      */
     function execute(context) {
       try {

@@ -20,7 +20,7 @@ define([],
      * @param {Record} context.newRecord - The new record being loaded
      * @param {string} context.type - The action type that triggered this event
      * @param {Form} context.form - The current UI form
-     * @return {void}
+     * @returns {void}
      */
     function beforeLoad(context) {
       try {
@@ -36,7 +36,7 @@ define([],
      * @param {Record} context.newRecord - The new record being submitted
      * @param {Record} context.oldRecord - The old record before it was modified
      * @param {string} context.type - The action type that triggered this event
-     * @return {void}
+     * @returns {void}
      */
     function beforeSubmit(context) {
       try {
@@ -52,7 +52,7 @@ define([],
      * @param {Record} context.newRecord - The new record being submitted
      * @param {Record} context.oldRecord - The old record before it was modified
      * @param {string} context.type - The action type that triggered this event
-     * @return {void}
+     * @returns {void}
      */
     function afterSubmit(context) {
       try {

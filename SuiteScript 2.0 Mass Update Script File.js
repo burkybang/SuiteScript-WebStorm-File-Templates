@@ -19,7 +19,7 @@ define([],
      * @param {Object} params
      * @param {number} params.id - The internal ID of the record being processed.
      * @param {string} params.type - The record type of the record being processed.
-     * @return {void}
+     * @returns {void}
      */
     function each(params) {
       try {

@@ -16,7 +16,7 @@ define([],
     
     /**
      * getInputData event handler
-     * @return {*[]|Object|search.Search}
+     * @returns {*[]|Object|search.Search}
      */
     function getInputData() {
       try {
@@ -29,7 +29,7 @@ define([],
     /**
      * map event handler
      * @param {MapContext} context - Data collection containing raw key/value pairs
-     * @return {void}
+     * @returns {void}
      */
     function map(context) {
       try {
@@ -42,7 +42,7 @@ define([],
     /**
      * reduce event handler
      * @param {ReduceContext} context - Data collection containing grouped key/value pairs
-     * @return {void}
+     * @returns {void}
      */
     function reduce(context) {
       try {
@@ -55,7 +55,7 @@ define([],
     /**
      * summarize event handler
      * @param {Summary} summary - Holds statistics regarding the execution of a map/reduce script
-     * @return {void}
+     * @returns {void}
      */
     function summarize(summary) {
       try {

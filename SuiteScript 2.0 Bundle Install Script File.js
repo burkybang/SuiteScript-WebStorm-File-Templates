@@ -18,7 +18,7 @@ define([],
      * beforeInstall event handler
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that is being installed
-     * @return {void}
+     * @returns {void}
      */
     function beforeInstall(params) {
       try {
@@ -32,7 +32,7 @@ define([],
      * afterInstall event handler
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that was just installed
-     * @return {void}
+     * @returns {void}
      */
     function afterInstall(params) {
       try {
@@ -47,7 +47,7 @@ define([],
      * @param {Object} params
      * @param {number} params.fromVersion - The version of the bundle that is currently installed
      * @param {number} params.toVersion - The version of the bundle that is being installed
-     * @return {void}
+     * @returns {void}
      */
     function beforeUpdate(params) {
       try {
@@ -62,7 +62,7 @@ define([],
      * @param {Object} params
      * @param {number} params.fromVersion - The version of the bundle that was previously installed
      * @param {number} params.toVersion - The version of the bundle that was just installed
-     * @return {void}
+     * @returns {void}
      */
     function afterUpdate(params) {
       try {
@@ -76,7 +76,7 @@ define([],
      * beforeUninstall event handler
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that is being uninstalled
-     * @return {void}
+     * @returns {void}
      */
     function beforeUninstall(params) {
       try {
