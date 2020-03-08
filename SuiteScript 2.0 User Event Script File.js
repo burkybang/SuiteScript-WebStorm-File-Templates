@@ -6,14 +6,17 @@
  */
 define([],
   
+  /**
+   * @returns {{
+      beforeLoad?: function(BeforeLoad),
+      beforeSubmit?: function(BeforeSubmit),
+      afterSubmit?: function(AfterSubmit)
+     }}
+   */
   function () {
     
     /**
-     * beforeLoad event handler.
-     * @param {Object} context
-     * @param {Record} context.newRecord - The new record being loaded
-     * @param {string} context.type - The action type that triggered this event
-     * @param {Form} context.form - The current UI form
+     * @param {BeforeLoad} context
      * @returns {void}
      */
     function beforeLoad(context) {
@@ -25,11 +28,7 @@ define([],
     }
     
     /**
-     * beforeSubmit event handler.
-     * @param {Object} context
-     * @param {Record} context.newRecord - The new record being submitted
-     * @param {Record} context.oldRecord - The old record before it was modified
-     * @param {string} context.type - The action type that triggered this event
+     * @param {BeforeSubmit} context
      * @returns {void}
      */
     function beforeSubmit(context) {
@@ -41,11 +40,7 @@ define([],
     }
     
     /**
-     * afterSubmit event handler.
-     * @param {Object} context
-     * @param {Record} context.newRecord - The new record being submitted
-     * @param {Record} context.oldRecord - The old record before it was modified
-     * @param {string} context.type - The action type that triggered this event
+     * @param {AfterSubmit} context
      * @returns {void}
      */
     function afterSubmit(context) {
