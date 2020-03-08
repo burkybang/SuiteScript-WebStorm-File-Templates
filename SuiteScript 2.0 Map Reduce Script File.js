@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope SameAccount
  * @NScriptType MapReduceScript
- * @see [NetSuite Help: Map/Reduce Script Type]{@link https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799161.html}
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799161.html
  */
 define([],
   

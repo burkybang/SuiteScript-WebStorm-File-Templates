@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope SameAccount
  * @NScriptType MassUpdateScript
- * @see [NetSuite Help: Mass Update Script Type]{@link https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4460452911.html}
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4460452911.html
  */
 define([],
   

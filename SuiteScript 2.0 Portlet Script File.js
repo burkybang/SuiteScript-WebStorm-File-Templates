@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope SameAccount
  * @NScriptType Portlet
- * @see [NetSuite Help: Portlet Script Type]{@link https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799288.html}
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799288.html
  */
 define([],
   

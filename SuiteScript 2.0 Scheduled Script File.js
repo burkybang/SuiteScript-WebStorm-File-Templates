@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope SameAccount
  * @NScriptType ScheduledScript
- * @see [NetSuite Help: Scheduled Script Type]{@link https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799491.html}
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799491.html
  */
 define([],
   
