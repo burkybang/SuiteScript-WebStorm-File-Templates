@@ -19,7 +19,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}:', 'each');
       } catch (e) {
-        log.error('each', JSON.stringify(e));
+        log.error('each', e);
       }
     }
     
