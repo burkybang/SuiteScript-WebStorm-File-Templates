@@ -6,12 +6,20 @@
  */
 define([],
   
+  /**
+   * @returns {{
+      getInputData: function(InputContext),
+      map?: function(MapContext),
+      reduce?: function(ReduceContext)
+      summarize?: function(SummarizeContext)
+     }}
+   */
   function () {
   
     /**
      * getInputData event handler
      * @param {InputContext} context
-     * @returns {*[]|Object|search.Search|InputContext|file.File|query.Query}
+     * @returns {*[]|Object|Search|InputContext|File|Query}
      */
     function getInputData(context) {
       try {
@@ -49,7 +57,7 @@ define([],
     
     /**
      * summarize event handler
-     * @param {Summary} summary - Holds statistics regarding the execution of a map/reduce script
+     * @param {SummarizeContext} summary - Holds statistics regarding the execution of a map/reduce script
      * @returns {void}
      */
     function summarize(summary) {
