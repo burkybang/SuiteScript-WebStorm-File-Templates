@@ -18,7 +18,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'get');
       } catch (e) {
-        log.error('get', e);
+        log.error('get', JSON.stringify(e));
       }
     }
     
@@ -33,7 +33,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'post');
       } catch (e) {
-        log.error('post', e);
+        log.error('post', JSON.stringify(e));
       }
     }
     
@@ -48,7 +48,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'put');
       } catch (e) {
-        log.error('put', e);
+        log.error('put', JSON.stringify(e));
       }
     }
     
@@ -62,7 +62,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'delete');
       } catch (e) {
-        log.error('delete', e);
+        log.error('delete', JSON.stringify(e));
       }
     }
     

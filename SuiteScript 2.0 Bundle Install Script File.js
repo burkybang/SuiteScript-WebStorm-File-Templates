@@ -18,7 +18,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'beforeInstall');
       } catch (e) {
-        log.error('beforeInstall', e);
+        log.error('beforeInstall', JSON.stringify(e));
       }
     }
     
@@ -32,7 +32,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'afterInstall');
       } catch (e) {
-        log.error('afterInstall', e);
+        log.error('afterInstall', JSON.stringify(e));
       }
     }
   
@@ -47,7 +47,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'beforeUpdate');
       } catch (e) {
-        log.error('beforeUpdate', e);
+        log.error('beforeUpdate', JSON.stringify(e));
       }
     }
     
@@ -62,7 +62,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'afterUpdate');
       } catch (e) {
-        log.error('afterUpdate', e);
+        log.error('afterUpdate', JSON.stringify(e));
       }
     }
   
@@ -76,7 +76,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'beforeUninstall');
       } catch (e) {
-        log.error('beforeUninstall', e);
+        log.error('beforeUninstall', JSON.stringify(e));
       }
     }
     

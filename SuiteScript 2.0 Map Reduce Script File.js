@@ -25,7 +25,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'getInputData');
       } catch (e) {
-        log.error('getInputData', e);
+        log.error('getInputData', JSON.stringify(e));
       }
     }
     
@@ -38,7 +38,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'map');
       } catch (e) {
-        log.error('map', e);
+        log.error('map', JSON.stringify(e));
       }
     }
     
@@ -51,7 +51,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'reduce');
       } catch (e) {
-        log.error('reduce', e);
+        log.error('reduce', JSON.stringify(e));
       }
     }
     
@@ -64,7 +64,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'summarize');
       } catch (e) {
-        log.error('summarize', e);
+        log.error('summarize', JSON.stringify(e));
       }
     }
     

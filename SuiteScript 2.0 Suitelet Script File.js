@@ -19,7 +19,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'onRequest');
       } catch (e) {
-        log.error('onRequest', e);
+        log.error('onRequest', JSON.stringify(e));
       }
     }
     
