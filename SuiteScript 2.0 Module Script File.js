@@ -5,6 +5,9 @@
  */
 define([],
   
+  /**
+   * @returns {Object<string, Function>}
+   */
   function () {
     
     return {};
