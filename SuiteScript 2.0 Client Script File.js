@@ -28,7 +28,7 @@ define([],
      */
     function pageInit(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'pageInit');
+        console.log('${PROJECT_NAME}:', 'pageInit:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -40,7 +40,7 @@ define([],
      */
     function validateField(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'validateField');
+        console.log('${PROJECT_NAME}:', 'validateField:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -53,7 +53,7 @@ define([],
      */
     function fieldChanged(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'fieldChanged');
+        console.log('${PROJECT_NAME}:', 'fieldChanged:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -65,7 +65,7 @@ define([],
      */
     function postSourcing(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'postSourcing');
+        console.log('${PROJECT_NAME}:', 'postSourcing:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -77,7 +77,7 @@ define([],
      */
     function lineInit(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'lineInit');
+        console.log('${PROJECT_NAME}:', 'lineInit:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -89,7 +89,7 @@ define([],
      */
     function validateLine(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'validateLine');
+        console.log('${PROJECT_NAME}:', 'validateLine:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -102,7 +102,7 @@ define([],
      */
     function validateInsert(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'validateInsert');
+        console.log('${PROJECT_NAME}:', 'validateInsert:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -115,7 +115,7 @@ define([],
      */
     function validateDelete(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'validateDelete');
+        console.log('${PROJECT_NAME}:', 'validateDelete:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -128,7 +128,7 @@ define([],
      */
     function sublistChanged(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'sublistChanged');
+        console.log('${PROJECT_NAME}:', 'sublistChanged:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
@@ -140,7 +140,7 @@ define([],
      */
     function saveRecord(context) {
       try {
-        console.log('${PROJECT_NAME}:', 'saveRecord');
+        console.log('${PROJECT_NAME}:', 'saveRecord:', context);
       } catch (e) {
         console.error('${PROJECT_NAME}', e);
       }
