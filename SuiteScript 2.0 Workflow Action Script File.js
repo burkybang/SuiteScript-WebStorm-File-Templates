@@ -6,13 +6,15 @@
  */
 define([],
   
+  /**
+   * @returns {{
+   *   onAction: function(OnActionContext)
+   * }}
+   */
   function () {
     
     /**
-     * onAction event handler
-     * @param {Object} context
-     * @param {Record} context.newRecord - The new record. Saving is not permitted
-     * @param {Record} context.oldRecord - The old record. Saving is not permitted
+     * @param {OnActionContext} context
      * @returns {void}
      */
     function onAction(context) {

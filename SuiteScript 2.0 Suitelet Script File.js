@@ -6,13 +6,15 @@
  */
 define([],
   
+  /**
+   * @returns {{
+   *   onRequest: function(OnRequestContext)
+   * }}
+   */
   function () {
     
     /**
-     * onRequest event handler
-     * @param {Object} context
-     * @param {ServerRequest} context.request - The incoming request object
-     * @param {ServerResponse} context.response - The outgoing response object
+     * @param {OnRequestContext} context
      * @returns {void}
      */
     function onRequest(context) {

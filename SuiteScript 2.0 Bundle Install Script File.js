@@ -6,10 +6,12 @@
  */
 define([],
   
+  /**
+   * @returns {Object<string, Function>}
+   */
   function () {
   
     /**
-     * beforeInstall event handler
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that is being installed
      * @returns {void}
@@ -23,7 +25,6 @@ define([],
     }
     
     /**
-     * afterInstall event handler
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that was just installed
      * @returns {void}
@@ -37,7 +38,6 @@ define([],
     }
   
     /**
-     * beforeUpdate event handler
      * @param {Object} params
      * @param {number} params.fromVersion - The version of the bundle that is currently installed
      * @param {number} params.toVersion - The version of the bundle that is being installed
@@ -52,7 +52,6 @@ define([],
     }
     
     /**
-     * afterUpdate event handler
      * @param {Object} params
      * @param {number} params.fromVersion - The version of the bundle that was previously installed
      * @param {number} params.toVersion - The version of the bundle that was just installed
@@ -67,7 +66,6 @@ define([],
     }
   
     /**
-     * beforeUninstall event handler
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that is being uninstalled
      * @returns {void}

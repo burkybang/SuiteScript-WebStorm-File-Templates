@@ -6,14 +6,15 @@
  */
 define([],
   
+  /**
+   * @returns {{
+   *   render: function(PortletParams),
+   * }}
+   */
   function () {
     
     /**
-     * render event handler
-     * @param {Object} params
-     * @param {Portlet} params.portlet - The portlet object used for rendering
-     * @param {number} params.column - The column index for the portlet on the dashboard (1=left, 2=center, 3=right)
-     * @param {string} params.entityid - The customer ID for the selected customer
+     * @param {PortletParams} params
      * @returns {void}
      */
     function render(params) {

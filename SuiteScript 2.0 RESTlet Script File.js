@@ -6,10 +6,17 @@
  */
 define([],
   
+  /**
+   * @returns {{
+   *   get?: Function,
+   *   post?: Function,
+   *   put?: Function,
+   *   delete?: Function,
+   * }}
+   */
   function () {
     
     /**
-     * get event handler
      * @param {Object} requestParams - The parameters from the HTTP request URL as key-value pairs
      * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
@@ -23,7 +30,6 @@ define([],
     }
     
     /**
-     * post event handler
      * @param {string|Object} requestBody - Request body is a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
@@ -38,7 +44,6 @@ define([],
     }
     
     /**
-     * put event handler
      * @param {string|Object} requestBody - Request body is a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
@@ -53,12 +58,11 @@ define([],
     }
     
     /**
-     * delete event handler
      * @param {Object} requestParams - The parameters from the HTTP request URL as key-value pairs
      * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
-    function _delete(requestParams) {
+    function delete_(requestParams) {
       try {
         log.audit('${PROJECT_NAME}', 'delete');
       } catch (e) {
@@ -70,7 +74,7 @@ define([],
       // get: get,
       // post: post,
       // put: put,
-      // delete: _delete,
+      // delete: delete_,
     };
     
   }

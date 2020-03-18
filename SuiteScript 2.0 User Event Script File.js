@@ -8,15 +8,15 @@ define([],
   
   /**
    * @returns {{
-      beforeLoad?: function(BeforeLoad),
-      beforeSubmit?: function(BeforeSubmit),
-      afterSubmit?: function(AfterSubmit)
+      beforeLoad?: function(BeforeLoadContext),
+      beforeSubmit?: function(BeforeSubmitContext),
+      afterSubmit?: function(AfterSubmitContext)
      }}
    */
   function () {
     
     /**
-     * @param {BeforeLoad} context
+     * @param {BeforeLoadContext} context
      * @returns {void}
      */
     function beforeLoad(context) {
@@ -28,7 +28,7 @@ define([],
     }
     
     /**
-     * @param {BeforeSubmit} context
+     * @param {BeforeSubmitContext} context
      * @returns {void}
      */
     function beforeSubmit(context) {
@@ -40,7 +40,7 @@ define([],
     }
     
     /**
-     * @param {AfterSubmit} context
+     * @param {AfterSubmitContext} context
      * @returns {void}
      */
     function afterSubmit(context) {

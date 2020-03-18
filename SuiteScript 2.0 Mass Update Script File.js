@@ -6,13 +6,15 @@
  */
 define([],
   
+  /**
+   * @returns {{
+   *   each: function(EachParams)
+   * }}
+   */
   function () {
     
     /**
-     * each event handler
-     * @param {Object} params
-     * @param {number} params.id - The internal ID of the record being processed.
-     * @param {string} params.type - The record type of the record being processed.
+     * @param {EachParams} params
      * @returns {void}
      */
     function each(params) {
