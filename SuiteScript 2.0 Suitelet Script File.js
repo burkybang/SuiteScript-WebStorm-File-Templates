@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
    *   onRequest: function(OnRequestContext)
    * }}
    */
@@ -15,7 +15,7 @@ define([],
     
     /**
      * @param {OnRequestContext} context
-     * @returns {void}
+     * @return {void}
      */
     function onRequest(context) {
       try {

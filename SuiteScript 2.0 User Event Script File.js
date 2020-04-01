@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
       beforeLoad?: function(BeforeLoadContext),
       beforeSubmit?: function(BeforeSubmitContext),
       afterSubmit?: function(AfterSubmitContext)
@@ -17,7 +17,7 @@ define([],
     
     /**
      * @param {BeforeLoadContext} context
-     * @returns {void}
+     * @return {void}
      */
     function beforeLoad(context) {
       try {
@@ -29,7 +29,7 @@ define([],
     
     /**
      * @param {BeforeSubmitContext} context
-     * @returns {void}
+     * @return {void}
      */
     function beforeSubmit(context) {
       try {
@@ -41,7 +41,7 @@ define([],
     
     /**
      * @param {AfterSubmitContext} context
-     * @returns {void}
+     * @return {void}
      */
     function afterSubmit(context) {
       try {

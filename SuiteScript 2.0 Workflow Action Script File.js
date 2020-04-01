@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
    *   onAction: function(OnActionContext)
    * }}
    */
@@ -15,7 +15,7 @@ define([],
     
     /**
      * @param {OnActionContext} context
-     * @returns {void}
+     * @return {void}
      */
     function onAction(context) {
       try {

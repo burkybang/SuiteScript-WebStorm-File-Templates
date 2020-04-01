@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
       getInputData: function(GetInputContext),
       map?: function(MapContext),
       reduce?: function(ReduceContext)
@@ -18,7 +18,7 @@ define([],
   
     /**
      * @param {GetInputContext} context
-     * @returns {*[]|Object|Search|GetInputContext|File|Query}
+     * @return {*[]|Object|Search|GetInputContext|File|Query}
      */
     function getInputData(context) {
       try {
@@ -30,7 +30,7 @@ define([],
     
     /**
      * @param {MapContext} context - Data collection containing raw key/value pairs
-     * @returns {void}
+     * @return {void}
      */
     function map(context) {
       try {
@@ -42,7 +42,7 @@ define([],
     
     /**
      * @param {ReduceContext} context - Data collection containing grouped key/value pairs
-     * @returns {void}
+     * @return {void}
      */
     function reduce(context) {
       try {
@@ -54,7 +54,7 @@ define([],
     
     /**
      * @param {SummarizeContext} summary - Holds statistics regarding the execution of a map/reduce script
-     * @returns {void}
+     * @return {void}
      */
     function summarize(summary) {
       try {

@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
    *   get?: Function,
    *   post?: Function,
    *   put?: Function,
@@ -18,7 +18,7 @@ define([],
     
     /**
      * @param {Object} requestParams - The parameters from the HTTP request URL as key-value pairs
-     * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
+     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
     function get(requestParams) {
@@ -32,7 +32,7 @@ define([],
     /**
      * @param {string|Object} requestBody - Request body is a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
-     * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
+     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
     function post(requestBody) {
@@ -46,7 +46,7 @@ define([],
     /**
      * @param {string|Object} requestBody - Request body is a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
-     * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
+     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
     function put(requestBody) {
@@ -59,7 +59,7 @@ define([],
     
     /**
      * @param {Object} requestParams - The parameters from the HTTP request URL as key-value pairs
-     * @returns {string|Object} - Returns a String when request "Content-Type" is "text/plain"
+     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
      */
     function delete_(requestParams) {

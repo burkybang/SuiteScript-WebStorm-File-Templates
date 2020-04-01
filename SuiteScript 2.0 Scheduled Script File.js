@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
    *   execute: function(ExecuteContext)
    * }}
    */
@@ -15,7 +15,7 @@ define([],
     
     /**
      * @param {ExecuteContext} context
-     * @returns {void}
+     * @return {void}
      */
     function execute(context) {
       try {

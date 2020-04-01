@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
    *   pageInit?: function(PageInitContext),
    *   validateField?: function(ValidateFieldContext),
    *   fieldChanged?: function(FieldChangedContext),
@@ -24,7 +24,7 @@ define([],
     
     /**
      * @param {PageInitContext} context
-     * @returns {void}
+     * @return {void}
      */
     function pageInit(context) {
       try {
@@ -36,7 +36,7 @@ define([],
     
     /**
      * @param {ValidateFieldContext} context
-     * @returns {boolean} - Return true if the field is valid or false to prevent the field value from changing
+     * @return {boolean} - Return true if the field is valid or false to prevent the field value from changing
      */
     function validateField(context) {
       try {
@@ -49,7 +49,7 @@ define([],
     
     /**
      * @param {FieldChangedContext} context
-     * @returns {void}
+     * @return {void}
      */
     function fieldChanged(context) {
       try {
@@ -61,7 +61,7 @@ define([],
     
     /**
      * @param {PostSourcingContext} context
-     * @returns {void}
+     * @return {void}
      */
     function postSourcing(context) {
       try {
@@ -73,7 +73,7 @@ define([],
     
     /**
      * @param {LineInitContext} context
-     * @returns {void}
+     * @return {void}
      */
     function lineInit(context) {
       try {
@@ -85,7 +85,7 @@ define([],
     
     /**
      * @param {ValidateLineContext} context
-     * @returns {boolean} - Return true if the sublist line is valid or false to reject the operation
+     * @return {boolean} - Return true if the sublist line is valid or false to reject the operation
      */
     function validateLine(context) {
       try {
@@ -98,7 +98,7 @@ define([],
     
     /**
      * @param {ValidateInsertContext} context
-     * @returns {boolean} - Return true if the sublist line is valid or false to block the insert
+     * @return {boolean} - Return true if the sublist line is valid or false to block the insert
      */
     function validateInsert(context) {
       try {
@@ -111,7 +111,7 @@ define([],
     
     /**
      * @param {ValidateDeleteContext} context
-     * @returns {boolean} - Return true if the sublist line is valid or false to block the removal
+     * @return {boolean} - Return true if the sublist line is valid or false to block the removal
      */
     function validateDelete(context) {
       try {
@@ -124,7 +124,7 @@ define([],
     
     /**
      * @param {SublistChangedContext} context
-     * @returns {void}
+     * @return {void}
      */
     function sublistChanged(context) {
       try {
@@ -136,7 +136,7 @@ define([],
     
     /**
      * @param {SaveRecordContext} context
-     * @returns {boolean} - Return true if the record is valid or false to suppress form submission
+     * @return {boolean} - Return true if the record is valid or false to suppress form submission
      */
     function saveRecord(context) {
       try {

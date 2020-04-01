@@ -7,14 +7,14 @@
 define([],
   
   /**
-   * @returns {Object<string, Function>}
+   * @return {Object<string, Function>}
    */
   function () {
   
     /**
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that is being installed
-     * @returns {void}
+     * @return {void}
      */
     function beforeInstall(params) {
       try {
@@ -27,7 +27,7 @@ define([],
     /**
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that was just installed
-     * @returns {void}
+     * @return {void}
      */
     function afterInstall(params) {
       try {
@@ -41,7 +41,7 @@ define([],
      * @param {Object} params
      * @param {number} params.fromVersion - The version of the bundle that is currently installed
      * @param {number} params.toVersion - The version of the bundle that is being installed
-     * @returns {void}
+     * @return {void}
      */
     function beforeUpdate(params) {
       try {
@@ -55,7 +55,7 @@ define([],
      * @param {Object} params
      * @param {number} params.fromVersion - The version of the bundle that was previously installed
      * @param {number} params.toVersion - The version of the bundle that was just installed
-     * @returns {void}
+     * @return {void}
      */
     function afterUpdate(params) {
       try {
@@ -68,7 +68,7 @@ define([],
     /**
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that is being uninstalled
-     * @returns {void}
+     * @return {void}
      */
     function beforeUninstall(params) {
       try {

@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
    *   render: function(PortletParams),
    * }}
    */
@@ -15,7 +15,7 @@ define([],
     
     /**
      * @param {PortletParams} params
-     * @returns {void}
+     * @return {void}
      */
     function render(params) {
       try {

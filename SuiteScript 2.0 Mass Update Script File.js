@@ -7,7 +7,7 @@
 define([],
   
   /**
-   * @returns {{
+   * @return {{
    *   each: function(EachParams)
    * }}
    */
@@ -15,7 +15,7 @@ define([],
     
     /**
      * @param {EachParams} params
-     * @returns {void}
+     * @return {void}
      */
     function each(params) {
       try {
