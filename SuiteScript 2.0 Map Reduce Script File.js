@@ -8,10 +8,10 @@ define([],
   
   /**
    * @return {{
-      getInputData: function(GetInputContext),
-      map?: function(MapContext),
-      reduce?: function(ReduceContext)
-      summarize?: function(SummarizeContext)
+      getInputData: Function,
+      map?: Function,
+      reduce?: Function,
+      summarize?: Function,
      }}
    */
   function () {

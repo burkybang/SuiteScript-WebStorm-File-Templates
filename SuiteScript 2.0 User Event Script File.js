@@ -8,9 +8,9 @@ define([],
   
   /**
    * @return {{
-      beforeLoad?: function(BeforeLoadContext),
-      beforeSubmit?: function(BeforeSubmitContext),
-      afterSubmit?: function(AfterSubmitContext)
+      beforeLoad?: Function,
+      beforeSubmit?: Function,
+      afterSubmit?: Function,
      }}
    */
   function () {

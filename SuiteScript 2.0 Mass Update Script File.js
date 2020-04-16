@@ -8,7 +8,7 @@ define([],
   
   /**
    * @return {{
-   *   each: function(EachParams)
+   *   each: Function,
    * }}
    */
   function () {

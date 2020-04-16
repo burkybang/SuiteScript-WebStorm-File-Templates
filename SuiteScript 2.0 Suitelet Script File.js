@@ -8,7 +8,7 @@ define([],
   
   /**
    * @return {{
-   *   onRequest: function(OnRequestContext)
+   *   onRequest: Function,
    * }}
    */
   function () {

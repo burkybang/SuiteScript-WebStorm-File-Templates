@@ -8,7 +8,7 @@ define([],
   
   /**
    * @return {{
-   *   onAction: function(OnActionContext)
+   *   onAction: Function,
    * }}
    */
   function () {

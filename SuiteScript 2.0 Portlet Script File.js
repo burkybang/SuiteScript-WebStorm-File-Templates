@@ -8,7 +8,7 @@ define([],
   
   /**
    * @return {{
-   *   render: function(PortletParams),
+   *   render: Function,
    * }}
    */
   function () {

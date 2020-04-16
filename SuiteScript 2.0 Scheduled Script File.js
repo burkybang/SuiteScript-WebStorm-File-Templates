@@ -8,7 +8,7 @@ define([],
   
   /**
    * @return {{
-   *   execute: function(ExecuteContext)
+   *   execute: Function,
    * }}
    */
   function () {

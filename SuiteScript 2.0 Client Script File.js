@@ -8,16 +8,16 @@ define([],
   
   /**
    * @return {{
-   *   pageInit?: function(PageInitContext),
-   *   validateField?: function(ValidateFieldContext),
-   *   fieldChanged?: function(FieldChangedContext),
-   *   postSourcing?: function(PostSourcingContext),
-   *   lineInit?: function(LineInitContext),
-   *   validateLine?: function(ValidateLineContext),
-   *   validateInsert?: function(ValidateInsertContext),
-   *   validateDelete?: function(ValidateDeleteContext),
-   *   sublistChanged?: function(SublistChangedContext),
-   *   saveRecord?: function(SaveRecordContext),
+   *   pageInit?: Function,
+   *   validateField?: Function,
+   *   fieldChanged?: Function,
+   *   postSourcing?: Function,
+   *   lineInit?: Function,
+   *   validateLine?: Function,
+   *   validateInsert?: Function,
+   *   validateDelete?: Function,
+   *   sublistChanged?: Function,
+   *   saveRecord?: Function,
    * }}
    */
   function () {
