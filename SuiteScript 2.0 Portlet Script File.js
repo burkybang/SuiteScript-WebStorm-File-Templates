@@ -19,8 +19,10 @@ define([],
      */
     function render(params) {
       try {
-        // Log audit after validations
-        log.audit('${PROJECT_NAME}', 'render');
+        log.audit('render', {
+          column: params.column,
+          entity: params.entity,
+        });
       } catch (e) {
         log.error('render', JSON.parse(JSON.stringify(e)));
       }
