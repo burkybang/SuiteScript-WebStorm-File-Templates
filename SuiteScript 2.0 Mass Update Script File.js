@@ -19,7 +19,7 @@ define([],
      */
     function each(params) {
       try {
-        log.audit('${PROJECT_NAME}:', 'each');
+        log.audit('each', params);
       } catch (e) {
         log.error('each', JSON.parse(JSON.stringify(e)));
       }
