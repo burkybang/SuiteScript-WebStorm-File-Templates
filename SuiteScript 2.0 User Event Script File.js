@@ -23,7 +23,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'beforeLoad');
       } catch (e) {
-        log.error('beforeLoad', JSON.stringify(e));
+        log.error('beforeLoad', JSON.parse(JSON.stringify(e)));
       }
     }
     
@@ -35,7 +35,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'beforeSubmit');
       } catch (e) {
-        log.error('beforeSubmit', JSON.stringify(e));
+        log.error('beforeSubmit', JSON.parse(JSON.stringify(e)));
       }
     }
     
@@ -47,7 +47,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'afterSubmit');
       } catch (e) {
-        log.error('afterSubmit', JSON.stringify(e));
+        log.error('afterSubmit', JSON.parse(JSON.stringify(e)));
       }
     }
     

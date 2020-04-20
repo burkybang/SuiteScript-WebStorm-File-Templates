@@ -22,7 +22,7 @@ define([],
         // Log audit after validations
         log.audit('${PROJECT_NAME}', 'render');
       } catch (e) {
-        log.error('render', JSON.stringify(e));
+        log.error('render', JSON.parse(JSON.stringify(e)));
       }
     }
     

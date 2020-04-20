@@ -21,7 +21,7 @@ define([],
       try {
         log.audit('${PROJECT_NAME}', 'onRequest');
       } catch (e) {
-        log.error('onRequest', JSON.stringify(e));
+        log.error('onRequest', JSON.parse(JSON.stringify(e)));
       }
     }
     

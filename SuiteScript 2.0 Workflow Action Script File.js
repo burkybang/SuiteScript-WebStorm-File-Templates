@@ -22,7 +22,7 @@ define([],
         // Log audit after validations
         log.audit('${PROJECT_NAME}', 'onAction');
       } catch (e) {
-        log.error('onAction', JSON.stringify(e));
+        log.error('onAction', JSON.parse(JSON.stringify(e)));
       }
     }
     
