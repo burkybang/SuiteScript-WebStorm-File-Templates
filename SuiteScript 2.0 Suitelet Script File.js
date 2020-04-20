@@ -19,7 +19,14 @@ define([],
      */
     function onRequest(context) {
       try {
-        log.audit('${PROJECT_NAME}', 'onRequest');
+        log.audit('onRequest', {
+          request: {
+            clientIpAddress: context.request.clientIpAddress,
+            url: context.request.url,
+            method: context.request.method,
+            parameters: context.request.parameters,
+          },
+        });
       } catch (e) {
         log.error('onRequest', JSON.parse(JSON.stringify(e)));
       }
