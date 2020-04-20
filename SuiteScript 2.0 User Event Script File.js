@@ -21,7 +21,18 @@ define([],
      */
     function beforeLoad(context) {
       try {
-        log.audit('${PROJECT_NAME}', 'beforeLoad');
+        log.audit('beforeLoad', {
+          type: context.type,
+          form: context.form,
+          newRecord: {
+            type: context.newRecord.type,
+            id: context.newRecord.id,
+          },
+          request: {
+            url: context.request.url,
+            parameters: context.request.parameters,
+          },
+        });
       } catch (e) {
         log.error('beforeLoad', JSON.parse(JSON.stringify(e)));
       }
@@ -33,7 +44,17 @@ define([],
      */
     function beforeSubmit(context) {
       try {
-        log.audit('${PROJECT_NAME}', 'beforeSubmit');
+        log.audit('beforeSubmit', {
+          type: context.type,
+          newRecord: {
+            type: context.newRecord.type,
+            id: context.newRecord.id,
+          },
+          oldRecord: {
+            type: context.oldRecord.type,
+            id: context.oldRecord.id,
+          },
+        });
       } catch (e) {
         log.error('beforeSubmit', JSON.parse(JSON.stringify(e)));
       }
@@ -45,7 +66,17 @@ define([],
      */
     function afterSubmit(context) {
       try {
-        log.audit('${PROJECT_NAME}', 'afterSubmit');
+        log.audit('afterSubmit', {
+          type: context.type,
+          newRecord: {
+            type: context.newRecord.type,
+            id: context.newRecord.id,
+          },
+          oldRecord: {
+            type: context.oldRecord.type,
+            id: context.oldRecord.id,
+          },
+        });
       } catch (e) {
         log.error('afterSubmit', JSON.parse(JSON.stringify(e)));
       }
