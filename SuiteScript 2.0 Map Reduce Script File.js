@@ -15,14 +15,14 @@ define([],
    * }}
    */
   function () {
-  
+    
     /**
      * @param {GetInputContext} context
      * @return {*[]|Object|Search|GetInputContext|File|Query}
      */
     function getInputData(context) {
       try {
-        log.audit('${PROJECT_NAME}', 'getInputData');
+        log.audit('getInputData', context);
       } catch (e) {
         log.error('getInputData', JSON.parse(JSON.stringify(e)));
       }
@@ -34,7 +34,7 @@ define([],
      */
     function map(context) {
       try {
-        log.audit('${PROJECT_NAME}', 'map');
+        log.audit('map', context);
       } catch (e) {
         log.error('map', JSON.parse(JSON.stringify(e)));
       }
@@ -46,19 +46,19 @@ define([],
      */
     function reduce(context) {
       try {
-        log.audit('${PROJECT_NAME}', 'reduce');
+        log.audit('reduce', context);
       } catch (e) {
         log.error('reduce', JSON.parse(JSON.stringify(e)));
       }
     }
     
     /**
-     * @param {SummarizeContext} summary - Holds statistics regarding the execution of a map/reduce script
+     * @param {SummarizeContext} context - Holds statistics regarding the execution of a map/reduce script
      * @return {void}
      */
-    function summarize(summary) {
+    function summarize(context) {
       try {
-        log.audit('${PROJECT_NAME}', 'summarize');
+        log.audit('summarize', context);
       } catch (e) {
         log.error('summarize', JSON.parse(JSON.stringify(e)));
       }
