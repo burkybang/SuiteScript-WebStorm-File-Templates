@@ -19,8 +19,16 @@ define([],
      */
     function onAction(context) {
       try {
-        // Log audit after validations
-        log.audit('${PROJECT_NAME}', 'onAction');
+        log.audit('onAction', {
+          newRecord: {
+            type: context.newRecord.type,
+            id: context.newRecord.id,
+          },
+          oldRecord: {
+            type: context.oldRecord.type,
+            id: context.oldRecord.id,
+          },
+        });
       } catch (e) {
         log.error('onAction', JSON.parse(JSON.stringify(e)));
       }
