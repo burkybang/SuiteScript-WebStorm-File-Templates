@@ -23,7 +23,7 @@ define([],
      */
     function get(requestParams) {
       try {
-        log.audit('${PROJECT_NAME}', 'get');
+        log.audit('get', requestParams);
       } catch (e) {
         log.error('get', JSON.parse(JSON.stringify(e)));
       }
@@ -37,7 +37,7 @@ define([],
      */
     function post(requestBody) {
       try {
-        log.audit('${PROJECT_NAME}', 'post');
+        log.audit('post', requestBody);
       } catch (e) {
         log.error('post', JSON.parse(JSON.stringify(e)));
       }
@@ -51,7 +51,7 @@ define([],
      */
     function put(requestBody) {
       try {
-        log.audit('${PROJECT_NAME}', 'put');
+        log.audit('put', requestBody);
       } catch (e) {
         log.error('put', JSON.parse(JSON.stringify(e)));
       }
@@ -64,7 +64,7 @@ define([],
      */
     function delete_(requestParams) {
       try {
-        log.audit('${PROJECT_NAME}', 'delete');
+        log.audit('delete', requestParams);
       } catch (e) {
         log.error('delete', JSON.parse(JSON.stringify(e)));
       }
