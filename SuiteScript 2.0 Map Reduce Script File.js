@@ -8,11 +8,11 @@ define([],
   
   /**
    * @return {{
-      getInputData: Function,
-      map?: Function,
-      reduce?: Function,
-      summarize?: Function,
-     }}
+   *  getInputData: Function,
+   *  map?: Function,
+   *  reduce?: Function,
+   *  summarize?: Function,
+   * }}
    */
   function () {
   

@@ -8,10 +8,10 @@ define([],
   
   /**
    * @return {{
-      beforeLoad?: Function,
-      beforeSubmit?: Function,
-      afterSubmit?: Function,
-     }}
+   *  beforeLoad?: Function,
+   *  beforeSubmit?: Function,
+   *  afterSubmit?: Function,
+   * }}
    */
   function () {
     
