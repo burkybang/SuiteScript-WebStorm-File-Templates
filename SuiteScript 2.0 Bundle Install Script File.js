@@ -18,7 +18,7 @@ define([],
      */
     function beforeInstall(params) {
       try {
-        log.audit('${PROJECT_NAME}', 'beforeInstall');
+        log.audit('beforeInstall', params);
       } catch (e) {
         log.error('beforeInstall', JSON.parse(JSON.stringify(e)));
       }
@@ -31,7 +31,7 @@ define([],
      */
     function afterInstall(params) {
       try {
-        log.audit('${PROJECT_NAME}', 'afterInstall');
+        log.audit('afterInstall', params);
       } catch (e) {
         log.error('afterInstall', JSON.parse(JSON.stringify(e)));
       }
@@ -45,7 +45,7 @@ define([],
      */
     function beforeUpdate(params) {
       try {
-        log.audit('${PROJECT_NAME}', 'beforeUpdate');
+        log.audit('beforeUpdate', params);
       } catch (e) {
         log.error('beforeUpdate', JSON.parse(JSON.stringify(e)));
       }
@@ -59,7 +59,7 @@ define([],
      */
     function afterUpdate(params) {
       try {
-        log.audit('${PROJECT_NAME}', 'afterUpdate');
+        log.audit('afterUpdate', params);
       } catch (e) {
         log.error('afterUpdate', JSON.parse(JSON.stringify(e)));
       }
@@ -72,7 +72,7 @@ define([],
      */
     function beforeUninstall(params) {
       try {
-        log.audit('${PROJECT_NAME}', 'beforeUninstall');
+        log.audit('beforeUninstall', params);
       } catch (e) {
         log.error('beforeUninstall', JSON.parse(JSON.stringify(e)));
       }
