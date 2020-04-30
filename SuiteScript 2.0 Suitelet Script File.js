@@ -33,7 +33,7 @@ define([],
     }
     
     return {
-      onRequest: onRequest
+      onRequest: onRequest,
     };
     
   }
