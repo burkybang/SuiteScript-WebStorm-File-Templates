@@ -16,7 +16,7 @@ define([],
    * }}
    */
   function () {
-  
+    
     /**
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that is being installed
@@ -42,7 +42,7 @@ define([],
         log.error('afterInstall', JSON.parse(JSON.stringify(e)));
       }
     }
-  
+    
     /**
      * @param {Object} params
      * @param {number} params.fromVersion - The version of the bundle that is currently installed
@@ -70,7 +70,7 @@ define([],
         log.error('afterUpdate', JSON.parse(JSON.stringify(e)));
       }
     }
-  
+    
     /**
      * @param {Object} params
      * @param {number} params.version - The version of the bundle that is being uninstalled
