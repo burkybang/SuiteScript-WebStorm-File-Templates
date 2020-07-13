@@ -28,7 +28,7 @@ define([],
             type: context.newRecord.type,
             id: context.newRecord.id,
           },
-          request: {
+          request: !context.request ? null : {
             url: context.request.url,
             parameters: context.request.parameters,
           },
