@@ -85,11 +85,11 @@ define([],
     };
     
     return {
-      // beforeInstall: beforeInstall,
-      // afterInstall: afterInstall,
-      // beforeUpdate: beforeUpdate,
-      // afterUpdate: afterUpdate,
-      // beforeUninstall: beforeUninstall,
+      // beforeInstall,
+      // afterInstall,
+      // beforeUpdate,
+      // afterUpdate,
+      // beforeUninstall,
     };
     
   }

@@ -26,7 +26,7 @@ define([],
     };
     
     return {
-      each: each,
+      each,
     };
     
   }

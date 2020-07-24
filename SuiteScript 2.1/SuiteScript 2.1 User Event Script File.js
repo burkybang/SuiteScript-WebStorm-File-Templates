@@ -83,9 +83,9 @@ define([],
     };
     
     return {
-      // beforeLoad: beforeLoad,
-      // beforeSubmit: beforeSubmit,
-      // afterSubmit: afterSubmit,
+      // beforeLoad,
+      // beforeSubmit,
+      // afterSubmit,
     };
     
   }

@@ -26,7 +26,7 @@ define([],
     };
     
     return {
-      execute: execute,
+      execute,
     };
     
   }

@@ -65,10 +65,10 @@ define([],
     };
     
     return {
-      getInputData: getInputData,
-      map: map,
-      reduce: reduce,
-      summarize: summarize,
+      getInputData,
+      map,
+      reduce,
+      summarize,
     };
     
   }

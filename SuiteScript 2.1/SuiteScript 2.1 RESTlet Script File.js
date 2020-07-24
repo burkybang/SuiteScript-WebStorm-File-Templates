@@ -71,9 +71,9 @@ define([],
     };
     
     return {
-      // get: get,
-      // post: post,
-      // put: put,
+      // get,
+      // post,
+      // put,
       // delete: delete_,
     };
     

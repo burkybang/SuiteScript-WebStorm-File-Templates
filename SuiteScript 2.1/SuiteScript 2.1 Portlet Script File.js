@@ -29,7 +29,7 @@ define([],
     }
     
     return {
-      render: render,
+      render,
     };
     
   }
