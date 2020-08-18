@@ -18,67 +18,62 @@ define([],
   () => {
     
     /**
-     * @param {Object} params
-     * @param {number} params.version - The version of the bundle that is being installed
+     * @param {number} version - The version of the bundle that is being installed
      * @return {void}
      */
-    const beforeInstall = params => {
+    const beforeInstall = ({version}) => {
       try {
-        log.audit('beforeInstall', params);
+        log.audit('beforeInstall', {version});
       } catch (e) {
-        log.error('beforeInstall', JSON.parse(JSON.stringify(e)));
+        log.error('beforeInstall', e.toJSON ? e : e.toString());
       }
     };
     
     /**
-     * @param {Object} params
-     * @param {number} params.version - The version of the bundle that was just installed
+     * @param {number} version - The version of the bundle that was just installed
      * @return {void}
      */
-    const afterInstall = params => {
+    const afterInstall = ({version}) => {
       try {
-        log.audit('afterInstall', params);
+        log.audit('afterInstall', {version});
       } catch (e) {
-        log.error('afterInstall', JSON.parse(JSON.stringify(e)));
+        log.error('afterInstall', e.toJSON ? e : e.toString());
       }
     };
     
     /**
-     * @param {Object} params
-     * @param {number} params.fromVersion - The version of the bundle that is currently installed
-     * @param {number} params.toVersion - The version of the bundle that is being installed
+     * @param {number} fromVersion - The version of the bundle that is currently installed
+     * @param {number} toVersion - The version of the bundle that is being installed
      * @return {void}
      */
-    const beforeUpdate = params => {
+    const beforeUpdate = ({toVersion, fromVersion}) => {
       try {
-        log.audit('beforeUpdate', params);
+        log.audit('beforeUpdate', {toVersion, fromVersion});
       } catch (e) {
-        log.error('beforeUpdate', JSON.parse(JSON.stringify(e)));
+        log.error('beforeUpdate', e.toJSON ? e : e.toString());
       }
     };
     
     /**
-     * @param {Object} params
-     * @param {number} params.fromVersion - The version of the bundle that was previously installed
-     * @param {number} params.toVersion - The version of the bundle that was just installed
+     * @param {number} fromVersion - The version of the bundle that was previously installed
+     * @param {number} toVersion - The version of the bundle that was just installed
      * @return {void}
      */
-    const afterUpdate = params => {
+    const afterUpdate = ({toVersion, fromVersion}) => {
       try {
-        log.audit('afterUpdate', params);
+        log.audit('afterUpdate', {toVersion, fromVersion});
       } catch (e) {
-        log.error('afterUpdate', JSON.parse(JSON.stringify(e)));
+        log.error('afterUpdate', e.toJSON ? e : e.toString());
       }
     };
     
     /**
-     * @param {Object} params
-     * @param {number} params.version - The version of the bundle that is being uninstalled
+     * @param {number} version - The version of the bundle that is being uninstalled
      * @return {void}
      */
-    const beforeUninstall = params => {
+    const beforeUninstall = ({version}) => {
       try {
-        log.audit('beforeUninstall', params);
+        log.audit('beforeUninstall', {version});
       } catch (e) {
         log.error('beforeUninstall', e.toJSON ? e : e.toString());
       }
