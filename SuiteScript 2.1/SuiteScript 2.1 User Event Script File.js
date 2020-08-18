@@ -34,7 +34,7 @@ define([],
           },
         });
       } catch (e) {
-        log.error('beforeLoad', JSON.parse(JSON.stringify(e)));
+        log.error('beforeLoad', e.toJSON ? e : e.toString());
       }
     };
     
@@ -56,7 +56,7 @@ define([],
           },
         });
       } catch (e) {
-        log.error('beforeSubmit', JSON.parse(JSON.stringify(e)));
+        log.error('beforeSubmit', e.toJSON ? e : e.toString());
       }
     };
     
@@ -78,7 +78,7 @@ define([],
           },
         });
       } catch (e) {
-        log.error('afterSubmit', JSON.parse(JSON.stringify(e)));
+        log.error('afterSubmit', e.toJSON ? e : e.toString());
       }
     };
     

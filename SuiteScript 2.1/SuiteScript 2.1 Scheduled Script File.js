@@ -21,7 +21,7 @@ define([],
       try {
         log.audit('execute', context.type);
       } catch (e) {
-        log.error('execute', JSON.parse(JSON.stringify(e)));
+        log.error('execute', e.toJSON ? e : e.toString());
       }
     };
     

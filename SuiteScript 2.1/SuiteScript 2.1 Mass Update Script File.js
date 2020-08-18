@@ -21,7 +21,7 @@ define([],
       try {
         log.audit('each', params);
       } catch (e) {
-        log.error('each', JSON.parse(JSON.stringify(e)));
+        log.error('each', e.toJSON ? e : e.toString());
       }
     };
     

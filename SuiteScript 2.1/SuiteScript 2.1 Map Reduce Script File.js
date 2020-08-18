@@ -24,7 +24,7 @@ define([],
       try {
         log.audit('getInputData', context);
       } catch (e) {
-        log.error('getInputData', JSON.parse(JSON.stringify(e)));
+        log.error('getInputData', e.toJSON ? e : e.toString());
       }
     };
     
@@ -36,7 +36,7 @@ define([],
       try {
         log.audit('map', context);
       } catch (e) {
-        log.error('map', JSON.parse(JSON.stringify(e)));
+        log.error('map', e.toJSON ? e : e.toString());
       }
     };
     
@@ -48,7 +48,7 @@ define([],
       try {
         log.audit('reduce', context);
       } catch (e) {
-        log.error('reduce', JSON.parse(JSON.stringify(e)));
+        log.error('reduce', e.toJSON ? e : e.toString());
       }
     };
     
@@ -60,7 +60,7 @@ define([],
       try {
         log.audit('summarize', context);
       } catch (e) {
-        log.error('summarize', JSON.parse(JSON.stringify(e)));
+        log.error('summarize', e.toJSON ? e : e.toString());
       }
     };
     

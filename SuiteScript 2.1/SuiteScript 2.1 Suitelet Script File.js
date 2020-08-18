@@ -28,7 +28,7 @@ define([],
           },
         });
       } catch (e) {
-        log.error('onRequest', JSON.parse(JSON.stringify(e)));
+        log.error('onRequest', e.toJSON ? e : e.toString());
       }
     };
     

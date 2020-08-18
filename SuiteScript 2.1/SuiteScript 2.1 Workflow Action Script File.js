@@ -30,7 +30,7 @@ define([],
           },
         });
       } catch (e) {
-        log.error('onAction', JSON.parse(JSON.stringify(e)));
+        log.error('onAction', e.toJSON ? e : e.toString());
       }
     };
     

@@ -24,7 +24,7 @@ define([],
           entity: params.entity,
         });
       } catch (e) {
-        log.error('render', JSON.parse(JSON.stringify(e)));
+        log.error('render', e.toJSON ? e : e.toString());
       }
     }
     

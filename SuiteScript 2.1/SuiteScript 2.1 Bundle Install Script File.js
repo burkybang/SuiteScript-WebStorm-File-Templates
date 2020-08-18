@@ -80,7 +80,7 @@ define([],
       try {
         log.audit('beforeUninstall', params);
       } catch (e) {
-        log.error('beforeUninstall', JSON.parse(JSON.stringify(e)));
+        log.error('beforeUninstall', e.toJSON ? e : e.toString());
       }
     };
     
