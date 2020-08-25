@@ -17,6 +17,7 @@ define([],
   function () {
     
     /**
+     * @type {Function}
      * @param {GetInputContext} context
      * @return {*[]|Object|Search|GetInputContext|File|Query}
      */
@@ -29,6 +30,7 @@ define([],
     };
     
     /**
+     * @type {Function}
      * @param {MapContext} context - Data collection containing raw key/value pairs
      * @return {void}
      */
@@ -41,6 +43,7 @@ define([],
     };
     
     /**
+     * @type {Function}
      * @param {ReduceContext} context - Data collection containing grouped key/value pairs
      * @return {void}
      */
@@ -53,6 +56,7 @@ define([],
     };
     
     /**
+     * @type {Function}
      * @param {SummarizeContext} context - Holds statistics regarding the execution of a map/reduce script
      * @return {void}
      */

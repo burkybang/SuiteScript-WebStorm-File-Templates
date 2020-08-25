@@ -14,6 +14,7 @@ define([],
   () => {
     
     /**
+     * @type {Function}
      * @param {EachParams} params
      * @return {void}
      */

@@ -18,6 +18,7 @@ define([],
   () => {
     
     /**
+     * @type {Function}
      * @param {number} version - The version of the bundle that is being installed
      * @return {void}
      */
@@ -30,6 +31,7 @@ define([],
     };
     
     /**
+     * @type {Function}
      * @param {number} version - The version of the bundle that was just installed
      * @return {void}
      */
@@ -42,6 +44,7 @@ define([],
     };
     
     /**
+     * @type {Function}
      * @param {number} fromVersion - The version of the bundle that is currently installed
      * @param {number} toVersion - The version of the bundle that is being installed
      * @return {void}
@@ -55,6 +58,7 @@ define([],
     };
     
     /**
+     * @type {Function}
      * @param {number} fromVersion - The version of the bundle that was previously installed
      * @param {number} toVersion - The version of the bundle that was just installed
      * @return {void}
@@ -68,6 +72,7 @@ define([],
     };
     
     /**
+     * @type {Function}
      * @param {number} version - The version of the bundle that is being uninstalled
      * @return {void}
      */

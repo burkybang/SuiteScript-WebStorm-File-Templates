@@ -14,10 +14,11 @@ define([],
   () => {
     
     /**
+     * @type {Function}
      * @param {PortletParams} params
      * @return {void}
      */
-    function render(params) {
+    const render = params => {
       try {
         log.audit('render', {
           column: params.column,
@@ -26,11 +27,9 @@ define([],
       } catch (e) {
         log.error('render', e.toJSON ? e : e.toString());
       }
-    }
-    
-    return {
-      render,
     };
+    
+    return {render};
     
   }
 );

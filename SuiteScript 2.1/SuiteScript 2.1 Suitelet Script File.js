@@ -14,6 +14,7 @@ define([],
   () => {
     
     /**
+     * @type {Function}
      * @param {OnRequestContext} context
      * @return {void}
      */
@@ -32,9 +33,7 @@ define([],
       }
     };
     
-    return {
-      onRequest,
-    };
+    return {onRequest};
     
   }
 );

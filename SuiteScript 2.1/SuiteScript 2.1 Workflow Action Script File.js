@@ -14,6 +14,7 @@ define([],
   () => {
     
     /**
+     * @type {Function}
      * @param {OnActionContext} context
      * @return {void}
      */
@@ -34,9 +35,7 @@ define([],
       }
     };
     
-    return {
-      onAction,
-    };
+    return {onAction};
     
   }
 );
