@@ -1,13 +1,13 @@
 /**
  * @param {string<'create'|'copy'|'edit'>} eventType
- * @returns {void}
+ * @return {void}
  */
 function pageInit(eventType) {
   
 }
 
 /**
- * @returns {boolean} - Return true if the record is valid or false to suppress form submission
+ * @return {boolean} - Return true if the record is valid or false to suppress form submission
  */
 function saveRecord() {
   
@@ -17,7 +17,7 @@ function saveRecord() {
  * @param {string} sublistId - The internal ID of the sublist
  * @param {string} fieldId - The internal ID of the field being validated
  * @param {number} [lineNumber] - The number of the line if the field is in a sublist
- * @returns {boolean} - Return true if the field is valid or false to prevent the field value from changing
+ * @return {boolean} - Return true if the field is valid or false to prevent the field value from changing
  */
 function validateField(sublistId, fieldId, lineNumber) {
 
@@ -27,7 +27,7 @@ function validateField(sublistId, fieldId, lineNumber) {
  * @param {string} sublistId - The internal ID of the sublist
  * @param {string} fieldId - The internal ID of the field that was changed
  * @param {number} [lineNumber] - The number of the line if the field is in a sublist
- * @returns {void}
+ * @return {void}
  */
 function fieldChanged(sublistId, fieldId, lineNumber) {
   
@@ -37,7 +37,7 @@ function fieldChanged(sublistId, fieldId, lineNumber) {
  * @param {string} sublistId - The internal ID of the sublist
  * @param {string} fieldId - The internal ID of the field that triggered postSourcing
  * @param {number} [lineNumber] - The number of the line if the field is in a sublist (undocumented)
- * @returns {void}
+ * @return {void}
  */
 function postSourcing(sublistId, fieldId, lineNumber) {
 
@@ -45,7 +45,7 @@ function postSourcing(sublistId, fieldId, lineNumber) {
 
 /**
  * @param {string} sublistId - The internal ID of the sublist
- * @returns {void}
+ * @return {void}
  */
 function lineInit(sublistId) {
 
@@ -53,7 +53,7 @@ function lineInit(sublistId) {
 
 /**
  * @param {string} sublistId - The internal ID of the sublist
- * @returns {boolean} - Return true if the sublist line is valid or false to reject the operation
+ * @return {boolean} - Return true if the sublist line is valid or false to reject the operation
  */
 function validateLine(sublistId) {
 
@@ -61,7 +61,7 @@ function validateLine(sublistId) {
 
 /**
  * @param {string} sublistId - The internal ID of the sublist
- * @returns {void}
+ * @return {void}
  */
 function recalc(sublistId) {
 
@@ -69,7 +69,7 @@ function recalc(sublistId) {
 
 /**
  * @param {string} sublistId - The internal ID of the sublist
- * @returns {boolean} - Return true if the sublist line is valid or false to block the insert
+ * @return {boolean} - Return true if the sublist line is valid or false to block the insert
  */
 function validateInsert(sublistId) {
 
@@ -77,7 +77,7 @@ function validateInsert(sublistId) {
 
 /**
  * @param {string} sublistId - The internal ID of the sublist
- * @returns {boolean} - Return true if the sublist line is valid or false to block the removal
+ * @return {boolean} - Return true if the sublist line is valid or false to block the removal
  */
 function validateDelete(sublistId) {
 

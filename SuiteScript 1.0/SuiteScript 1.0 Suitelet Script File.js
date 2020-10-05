@@ -1,7 +1,7 @@
 /**
  * @param {nlobjRequest} request - The incoming request object
  * @param {nlobjResponse} response - The outgoing response object
- * @returns {void}
+ * @return {void}
  */
 function suitelet(request, response) {
   
