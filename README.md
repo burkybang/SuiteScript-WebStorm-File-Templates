@@ -1,7 +1,7 @@
 # SuiteScript WebStorm File Templates
 
-[![](https://img.shields.io/github/watchers/burkybang/SuiteScript-WebStorm-File-Templates?style=social)](../../watchers)
-[![](https://img.shields.io/github/stars/burkybang/SuiteScript-WebStorm-File-Templates?style=social)](../../stargazers)
+[![Repo Watchers](https://img.shields.io/github/watchers/burkybang/SuiteScript-WebStorm-File-Templates?style=social)](../../watchers)
+[![Repo Stars](https://img.shields.io/github/stars/burkybang/SuiteScript-WebStorm-File-Templates?style=social)](../../stargazers)
 
 ## Author
 
