@@ -1,5 +1,8 @@
 # SuiteScript WebStorm File Templates
 
+[![](https://img.shields.io/github/watchers/burkybang/SuiteScript-WebStorm-File-Templates?style=social)](../../watchers)
+[![](https://img.shields.io/github/stars/burkybang/SuiteScript-WebStorm-File-Templates?style=social)](../../stargazers)
+
 ## Author
 
 ![GitHub](https://github.com/burkybang/burkybang/raw/master/Images/github16.png "GitHub") [burkybang](https://github.com/burkybang)  
