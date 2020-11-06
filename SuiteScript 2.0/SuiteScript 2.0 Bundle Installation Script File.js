@@ -8,11 +8,11 @@ define([],
   
   /**
    * @return {{
-   *  beforeInstall?: Function,
-   *  afterInstall?: Function,
-   *  beforeUpdate?: Function,
-   *  afterUpdate?: Function,
-   *  beforeUninstall?: Function,
+   *   beforeInstall?: Function,
+   *   afterInstall?: Function,
+   *   beforeUpdate?: Function,
+   *   afterUpdate?: Function,
+   *   beforeUninstall?: Function,
    * }}
    */
   function () {

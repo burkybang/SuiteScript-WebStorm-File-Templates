@@ -8,7 +8,7 @@ define([],
   
   /**
    * @return {{
-   *  run: Function,
+   *   run: Function,
    * }}
    */
   function () {
