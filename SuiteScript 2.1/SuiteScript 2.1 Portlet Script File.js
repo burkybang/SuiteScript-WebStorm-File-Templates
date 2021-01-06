@@ -14,7 +14,6 @@ define([],
   () => {
     
     /**
-     * @type {Function}
      * @param {PortletParams} params
      * @return {void}
      */

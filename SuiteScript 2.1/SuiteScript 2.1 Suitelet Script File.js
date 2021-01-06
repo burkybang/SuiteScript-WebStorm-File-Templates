@@ -14,7 +14,6 @@ define([],
   () => {
     
     /**
-     * @type {Function}
      * @param {OnRequestContext} context
      * @return {void}
      */

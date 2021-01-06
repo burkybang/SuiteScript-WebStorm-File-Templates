@@ -16,7 +16,6 @@ define([],
   () => {
     
     /**
-     * @type {Function}
      * @param {BeforeLoadContext} context
      * @return {void}
      */
@@ -40,7 +39,6 @@ define([],
     };
     
     /**
-     * @type {Function}
      * @param {BeforeSubmitContext} context
      * @return {void}
      */
@@ -63,7 +61,6 @@ define([],
     };
     
     /**
-     * @type {Function}
      * @param {AfterSubmitContext} context
      * @return {void}
      */

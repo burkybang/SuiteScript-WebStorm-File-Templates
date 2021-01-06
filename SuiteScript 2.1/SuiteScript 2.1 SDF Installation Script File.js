@@ -14,7 +14,6 @@ define([],
   () => {
     
     /**
-     * @type {Function}
      * @param {string} fromVersion - The version of the SuiteApp currently installed on the account, null if new installation
      * @param {string} toVersion - The version of the SuiteApp that will be installed on the account
      * @return {void}

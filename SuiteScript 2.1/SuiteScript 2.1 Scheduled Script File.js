@@ -14,7 +14,6 @@ define([],
   () => {
     
     /**
-     * @type {Function}
      * @param {ExecuteContext} context
      * @return {void}
      */
