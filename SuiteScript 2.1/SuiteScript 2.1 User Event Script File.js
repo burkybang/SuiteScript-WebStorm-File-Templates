@@ -50,10 +50,10 @@ define([],
             type: context.newRecord.type,
             id: context.newRecord.id,
           },
-          oldRecord: context.oldRecord ? {
+          oldRecord: !context.oldRecord ? null : {
             type: context.oldRecord.type,
             id: context.oldRecord.id,
-          } : null,
+          },
         });
       } catch (e) {
         log.error('beforeSubmit', e.toJSON ? e : e.toString());
@@ -72,10 +72,10 @@ define([],
             type: context.newRecord.type,
             id: context.newRecord.id,
           },
-          oldRecord: context.oldRecord ? {
+          oldRecord: !context.oldRecord ? null : {
             type: context.oldRecord.type,
             id: context.oldRecord.id,
-          } : null,
+          },
         });
       } catch (e) {
         log.error('afterSubmit', e.toJSON ? e : e.toString());
