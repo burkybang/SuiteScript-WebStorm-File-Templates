@@ -23,7 +23,7 @@ define([],
   function () {
     
     /**
-     * Used in logged to help identify which client script is doing the logging
+     * Used in logs to help identify which client script is doing the logging
      * @type {string}
      */
     const SCRIPT_FILENAME = '${NAME}';
