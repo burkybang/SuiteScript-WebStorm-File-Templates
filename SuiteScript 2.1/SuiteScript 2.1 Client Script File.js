@@ -34,9 +34,9 @@ define([],
      */
     const pageInit = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: pageInit:`, context);
+        console.log(`\${SCRIPT_FILENAME}: pageInit:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: pageInit:`, e);
+        console.error(`\${SCRIPT_FILENAME}: pageInit:`, e);
       }
     };
     
@@ -46,9 +46,9 @@ define([],
      */
     const validateField = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: validateField:`, context);
+        console.log(`\${SCRIPT_FILENAME}: validateField:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: validateField:`, e);
+        console.error(`\${SCRIPT_FILENAME}: validateField:`, e);
       }
       return true;
     };
@@ -59,9 +59,9 @@ define([],
      */
     const fieldChanged = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: fieldChanged:`, context);
+        console.log(`\${SCRIPT_FILENAME}: fieldChanged:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: fieldChanged:`, e);
+        console.error(`\${SCRIPT_FILENAME}: fieldChanged:`, e);
       }
     };
     
@@ -71,9 +71,9 @@ define([],
      */
     const postSourcing = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: postSourcing:`, context);
+        console.log(`\${SCRIPT_FILENAME}: postSourcing:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: postSourcing:`, e);
+        console.error(`\${SCRIPT_FILENAME}: postSourcing:`, e);
       }
     };
     
@@ -83,9 +83,9 @@ define([],
      */
     const lineInit = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: lineInit:`, context);
+        console.log(`\${SCRIPT_FILENAME}: lineInit:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: lineInit:`, e);
+        console.error(`\${SCRIPT_FILENAME}: lineInit:`, e);
       }
     };
     
@@ -95,9 +95,9 @@ define([],
      */
     const validateLine = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: validateLine:`, context);
+        console.log(`\${SCRIPT_FILENAME}: validateLine:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: validateLine:`, e);
+        console.error(`\${SCRIPT_FILENAME}: validateLine:`, e);
       }
       return true;
     };
@@ -108,9 +108,9 @@ define([],
      */
     const validateInsert = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: validateInsert:`, context);
+        console.log(`\${SCRIPT_FILENAME}: validateInsert:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: validateInsert:`, e);
+        console.error(`\${SCRIPT_FILENAME}: validateInsert:`, e);
       }
       return true;
     };
@@ -121,9 +121,9 @@ define([],
      */
     const validateDelete = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: validateDelete:`, context);
+        console.log(`\${SCRIPT_FILENAME}: validateDelete:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: validateDelete:`, e);
+        console.error(`\${SCRIPT_FILENAME}: validateDelete:`, e);
       }
       return true;
     };
@@ -134,9 +134,9 @@ define([],
      */
     const sublistChanged = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: sublistChanged:`, context);
+        console.log(`\${SCRIPT_FILENAME}: sublistChanged:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: sublistChanged:`, e);
+        console.error(`\${SCRIPT_FILENAME}: sublistChanged:`, e);
       }
     };
     
@@ -146,9 +146,9 @@ define([],
      */
     const saveRecord = context => {
       try {
-        console.log(`${SCRIPT_FILENAME}: saveRecord:`, context);
+        console.log(`\${SCRIPT_FILENAME}: saveRecord:`, context);
       } catch (e) {
-        console.error(`${SCRIPT_FILENAME}: saveRecord:`, e);
+        console.error(`\${SCRIPT_FILENAME}: saveRecord:`, e);
       }
       return true;
     };
