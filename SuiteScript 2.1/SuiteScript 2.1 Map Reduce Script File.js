@@ -14,7 +14,7 @@ define([],
    *   summarize?: Function,
    * }}
    */
-  function () {
+  () => {
     
     /**
      * @param {GetInputContext} context
