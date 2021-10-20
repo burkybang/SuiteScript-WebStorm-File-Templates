@@ -35,6 +35,7 @@ define([],
     const pageInit = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: pageInit:`, context);
+        const {mode, currentRecord} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: pageInit:`, e);
       }
@@ -47,6 +48,7 @@ define([],
     const validateField = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: validateField:`, context);
+        const {currentRecord, sublistId, fieldId, line, column} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateField:`, e);
       }
@@ -60,6 +62,7 @@ define([],
     const fieldChanged = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: fieldChanged:`, context);
+        const {currentRecord, sublistId, fieldId, line, column} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: fieldChanged:`, e);
       }
@@ -72,6 +75,7 @@ define([],
     const postSourcing = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: postSourcing:`, context);
+        const {currentRecord, sublistId, fieldId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: postSourcing:`, e);
       }
@@ -84,6 +88,7 @@ define([],
     const lineInit = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: lineInit:`, context);
+        const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: lineInit:`, e);
       }
@@ -96,6 +101,7 @@ define([],
     const validateLine = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: validateLine:`, context);
+        const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateLine:`, e);
       }
@@ -109,6 +115,7 @@ define([],
     const validateInsert = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: validateInsert:`, context);
+        const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateInsert:`, e);
       }
@@ -122,6 +129,7 @@ define([],
     const validateDelete = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: validateDelete:`, context);
+        const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateDelete:`, e);
       }
@@ -135,6 +143,7 @@ define([],
     const sublistChanged = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: sublistChanged:`, context);
+        const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: sublistChanged:`, e);
       }
@@ -147,6 +156,7 @@ define([],
     const saveRecord = context => {
       try {
         console.log(`\${SCRIPT_FILENAME}: saveRecord:`, context);
+        const {currentRecord} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: saveRecord:`, e);
       }

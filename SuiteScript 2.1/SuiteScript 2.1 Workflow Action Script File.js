@@ -29,8 +29,9 @@ define([],
             id: context.oldRecord.id,
           },
         });
+        const {newRecord, oldRecord} = context;
       } catch (e) {
-        log.error('onAction', e.toJSON ? e : e.toString());
+        log.error('onAction', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     

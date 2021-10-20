@@ -17,11 +17,11 @@ define([],
      * @param {ExecuteContext} context
      * @return {void}
      */
-    const execute = context => {
+    const execute = ({type}) => {
       try {
-        log.audit('execute', context.type);
+        log.audit('execute', `Type: ${type}`);
       } catch (e) {
-        log.error('execute', e.toJSON ? e : e.toString());
+        log.error('execute', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     

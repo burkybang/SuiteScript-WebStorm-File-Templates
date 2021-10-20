@@ -17,11 +17,11 @@ define([],
      * @param {EachParams} params
      * @return {void}
      */
-    const each = params => {
+    const each = ({id, type}) => {
       try {
-        log.audit('each', params);
+        log.audit('each', {id, type});
       } catch (e) {
-        log.error('each', e.toJSON ? e : e.toString());
+        log.error('each', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     

@@ -33,8 +33,9 @@ define([],
             parameters: context.request.parameters,
           },
         });
+        const {type, newRecord, form, request} = context;
       } catch (e) {
-        log.error('beforeLoad', e.toJSON ? e : e.toString());
+        log.error('beforeLoad', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -55,8 +56,9 @@ define([],
             id: context.oldRecord.id,
           },
         });
+        const {type, newRecord, oldRecord} = context;
       } catch (e) {
-        log.error('beforeSubmit', e.toJSON ? e : e.toString());
+        log.error('beforeSubmit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -77,8 +79,9 @@ define([],
             id: context.oldRecord.id,
           },
         });
+        const {type, newRecord, oldRecord} = context;
       } catch (e) {
-        log.error('afterSubmit', e.toJSON ? e : e.toString());
+        log.error('afterSubmit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     

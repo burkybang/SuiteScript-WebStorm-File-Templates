@@ -27,8 +27,9 @@ define([],
             parameters: context.request.parameters,
           },
         });
+        const {request, response} = context;
       } catch (e) {
-        log.error('onRequest', e.toJSON ? e : e.toString());
+        log.error('onRequest', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     

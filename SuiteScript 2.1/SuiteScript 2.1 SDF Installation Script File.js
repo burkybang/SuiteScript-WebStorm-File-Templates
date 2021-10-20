@@ -22,7 +22,7 @@ define([],
       try {
         log.audit('run', {fromVersion, toVersion});
       } catch (e) {
-        log.error('run', e.toJSON ? e : e.toString());
+        log.error('run', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     

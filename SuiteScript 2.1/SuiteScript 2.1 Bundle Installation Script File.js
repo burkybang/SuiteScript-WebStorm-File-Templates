@@ -25,7 +25,7 @@ define([],
       try {
         log.audit('beforeInstall', {version});
       } catch (e) {
-        log.error('beforeInstall', e.toJSON ? e : e.toString());
+        log.error('beforeInstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -37,7 +37,7 @@ define([],
       try {
         log.audit('afterInstall', {version});
       } catch (e) {
-        log.error('afterInstall', e.toJSON ? e : e.toString());
+        log.error('afterInstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -50,7 +50,7 @@ define([],
       try {
         log.audit('beforeUpdate', {toVersion, fromVersion});
       } catch (e) {
-        log.error('beforeUpdate', e.toJSON ? e : e.toString());
+        log.error('beforeUpdate', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -63,7 +63,7 @@ define([],
       try {
         log.audit('afterUpdate', {toVersion, fromVersion});
       } catch (e) {
-        log.error('afterUpdate', e.toJSON ? e : e.toString());
+        log.error('afterUpdate', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -75,7 +75,7 @@ define([],
       try {
         log.audit('beforeUninstall', {version});
       } catch (e) {
-        log.error('beforeUninstall', e.toJSON ? e : e.toString());
+        log.error('beforeUninstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
