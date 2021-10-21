@@ -38,6 +38,7 @@ define([],
         const {mode, currentRecord} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: pageInit:`, e);
+        log.error('pageInit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -51,6 +52,7 @@ define([],
         const {currentRecord, sublistId, fieldId, line, column} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateField:`, e);
+        log.error('validateField', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
       return true;
     };
@@ -65,6 +67,7 @@ define([],
         const {currentRecord, sublistId, fieldId, line, column} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: fieldChanged:`, e);
+        log.error('fieldChanged', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -78,6 +81,7 @@ define([],
         const {currentRecord, sublistId, fieldId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: postSourcing:`, e);
+        log.error('postSourcing', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -91,6 +95,7 @@ define([],
         const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: lineInit:`, e);
+        log.error('lineInit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -104,6 +109,7 @@ define([],
         const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateLine:`, e);
+        log.error('validateLine', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
       return true;
     };
@@ -118,6 +124,7 @@ define([],
         const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateInsert:`, e);
+        log.error('validateInsert', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
       return true;
     };
@@ -132,6 +139,7 @@ define([],
         const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateDelete:`, e);
+        log.error('validateDelete', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
       return true;
     };
@@ -146,6 +154,7 @@ define([],
         const {currentRecord, sublistId} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: sublistChanged:`, e);
+        log.error('sublistChanged', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
     };
     
@@ -159,6 +168,7 @@ define([],
         const {currentRecord} = context;
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: saveRecord:`, e);
+        log.error('saveRecord', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
       return true;
     };
