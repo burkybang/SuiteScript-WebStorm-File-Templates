@@ -6,7 +6,7 @@
 define([],
   
   /**
-   * @return {Object<string, Function>}
+   *
    */
   () => {
     
