@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope SameAccount
  * @NScriptType UserEventScript
- * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799721.html
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799721
  */
 define([],
   

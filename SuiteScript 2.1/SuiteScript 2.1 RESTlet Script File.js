@@ -2,7 +2,7 @@
  * @NApiVersion 2.1
  * @NModuleScope SameAccount
  * @NScriptType RESTlet
- * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799403.html
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387799403
  */
 define([],
   

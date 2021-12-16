@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope SameAccount
  * @NScriptType BundleInstallationScript
- * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4460460309.html
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4460460309
  */
 define([],
   

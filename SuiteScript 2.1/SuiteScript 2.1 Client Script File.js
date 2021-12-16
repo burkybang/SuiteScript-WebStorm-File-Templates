@@ -2,7 +2,7 @@
  * @NApiVersion 2.1
  * @NModuleScope SameAccount
  * @NScriptType ClientScript
- * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387798404.html
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4387798404
  */
 define([],
   

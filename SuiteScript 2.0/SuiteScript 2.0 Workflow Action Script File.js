@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope SameAccount
  * @NScriptType WorkflowActionScript
- * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4460429314.html
+ * @see https://system.netsuite.com/app/help/helpcenter.nl?fid=section_4460429314
  */
 define([],
   
