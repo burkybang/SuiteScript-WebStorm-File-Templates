@@ -18,7 +18,7 @@ define([],
     
     /**
      * @param {GetInputContext} context
-     * @return {*[]|Object|Search|GetInputContext|File|Query}
+     * @return {GetInputReturn}
      */
     function getInputData(context) {
       try {
