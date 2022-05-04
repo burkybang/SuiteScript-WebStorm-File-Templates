@@ -73,6 +73,5 @@ define([],
       reduce: reduce,
       summarize: summarize,
     };
-    
-  }
+  },
 );

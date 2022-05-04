@@ -94,6 +94,5 @@ define([],
       // afterUpdate: afterUpdate,
       // beforeUninstall: beforeUninstall,
     };
-    
-  }
+  },
 );

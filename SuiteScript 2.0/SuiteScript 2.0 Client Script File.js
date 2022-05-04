@@ -178,6 +178,5 @@ define([],
       // sublistChanged: sublistChanged,
       // saveRecord: saveRecord,
     };
-    
-  }
+  },
 );

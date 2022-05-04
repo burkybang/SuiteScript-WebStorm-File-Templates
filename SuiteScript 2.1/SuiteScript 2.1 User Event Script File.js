@@ -93,6 +93,5 @@ define([],
       // beforeSubmit,
       // afterSubmit,
     };
-    
-  }
+  },
 );

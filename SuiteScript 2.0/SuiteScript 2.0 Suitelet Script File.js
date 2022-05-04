@@ -38,6 +38,5 @@ define([],
     return {
       onRequest: onRequest,
     };
-    
-  }
+  },
 );

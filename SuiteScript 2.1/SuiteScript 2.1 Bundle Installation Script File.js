@@ -89,6 +89,5 @@ define([],
       // afterUpdate,
       // beforeUninstall,
     };
-    
-  }
+  },
 );

@@ -34,6 +34,5 @@ define([],
     return {
       render: render,
     };
-    
-  }
+  },
 );

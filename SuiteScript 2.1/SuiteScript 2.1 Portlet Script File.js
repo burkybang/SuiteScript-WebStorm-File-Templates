@@ -29,6 +29,5 @@ define([],
     };
     
     return {render};
-    
-  }
+  },
 );

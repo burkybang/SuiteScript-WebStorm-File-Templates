@@ -31,6 +31,5 @@ define([],
     return {
       each,
     };
-    
-  }
+  },
 );

@@ -39,6 +39,5 @@ define([],
     };
     
     return {onAction};
-    
-  }
+  },
 );

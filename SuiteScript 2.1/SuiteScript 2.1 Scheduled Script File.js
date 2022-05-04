@@ -30,6 +30,5 @@ define([],
     };
     
     return {execute};
-    
-  }
+  },
 );

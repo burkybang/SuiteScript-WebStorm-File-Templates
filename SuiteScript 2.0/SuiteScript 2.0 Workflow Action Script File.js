@@ -40,6 +40,5 @@ define([],
     return {
       onAction: onAction,
     };
-    
-  }
+  },
 );

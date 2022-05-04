@@ -29,9 +29,6 @@ define([],
       }
     };
     
-    return {
-      run,
-    };
-    
-  }
+    return {run};
+  },
 );

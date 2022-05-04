@@ -79,6 +79,5 @@ define([],
       // put: put,
       // delete: delete_,
     };
-    
-  }
+  },
 );

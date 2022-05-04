@@ -12,6 +12,5 @@ define([],
   function () {
     
     return {};
-    
-  }
+  },
 );

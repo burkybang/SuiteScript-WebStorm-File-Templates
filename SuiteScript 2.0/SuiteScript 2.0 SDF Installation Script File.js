@@ -33,6 +33,5 @@ define([],
     return {
       run: run,
     };
-    
-  }
+  },
 );
