@@ -21,7 +21,7 @@ define([],
     
     /**
      * @param {GetInputContext} context
-     * @return {GetInputReturn}
+     * @return {GetInputReturn|void}
      */
     function getInputData(context) {
       try {
