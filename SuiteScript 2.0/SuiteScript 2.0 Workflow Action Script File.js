@@ -24,13 +24,13 @@ define([],
     function onAction(context) {
       try {
         log.audit('onAction', {
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
           oldRecord: {
             type: context.oldRecord.type,
             id: context.oldRecord.id,
+          },
+          newRecord: {
+            type: context.newRecord.type,
+            id: context.newRecord.id,
           },
         });
       } catch (e) {

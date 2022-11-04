@@ -24,16 +24,16 @@ define([],
     const onAction = context => {
       try {
         log.audit('onAction', {
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
           oldRecord: {
             type: context.oldRecord.type,
             id: context.oldRecord.id,
           },
+          newRecord: {
+            type: context.newRecord.type,
+            id: context.newRecord.id,
+          },
         });
-        const {newRecord, oldRecord} = context;
+        const {oldRecord, newRecord} = context;
       } catch (e) {
         log.error('onAction', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
