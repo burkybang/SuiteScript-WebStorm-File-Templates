@@ -18,17 +18,65 @@ define([],
   function () {
     
     /**
-     * @param {Object} params
-     * @param {string} params.fromVersion - The version of the SuiteApp currently installed on the account, null if new installation
-     * @param {string} params.toVersion - The version of the SuiteApp that will be installed on the account
+     * @typedef {Object} RunParams
+     * @property {string} fromVersion - The version of the SuiteApp currently installed on the account, null if new installation
+     * @property {string} toVersion - The version of the SuiteApp that will be installed on the account
+     */
+    
+    /**
+     * @param {RunParams} params
      * @return {void}
      */
     function run(params) {
       try {
-        log.audit('run', params);
+        log.audit('run', {
+          fromVersion: params.fromVersion,
+          toVersion: params.toVersion,
+        });
+        
+        if (params.fromVersion) {
+          if (params.fromVersion === params.toVersion) {
+            onDeploy(params);
+          } else {
+            onUpdate(params);
+          }
+        } else {
+          onInstall(params);
+        }
+        
       } catch (e) {
         log.error('run', JSON.parse(JSON.stringify(e)));
       }
+    }
+    
+    /**
+     * Runs during an installation only
+     * @param {RunParams} params
+     * @return {void}
+     */
+    function onInstall(params) {
+      log.audit('onInstall', 'onInstall');
+      
+    }
+    
+    /**
+     * Runs during an update only
+     * @param {RunParams} params
+     * @return {void}
+     */
+    function onUpdate(params) {
+      log.audit('onUpdate', 'onUpdate');
+      
+    }
+    
+    /**
+     * Runs if the version number remains the same
+     * @param {RunParams} params
+     * @return {void}
+     */
+    function onDeploy(params) {
+      log.audit('onDeploy', 'onDeploy');
+      
     }
     
     return {
