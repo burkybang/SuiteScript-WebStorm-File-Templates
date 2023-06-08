@@ -29,8 +29,6 @@ define([],
       }
     };
     
-    return {
-      each,
-    };
+    return {each};
   },
 );
