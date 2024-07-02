@@ -13,7 +13,7 @@ define([],
   /**
    * @return {{
    *   getInputData: Function,
-   *   map?: Function,
+   *   map: Function,
    *   reduce?: Function,
    *   summarize?: Function,
    * }}
@@ -26,6 +26,7 @@ define([],
      */
     function getInputData(context) {
       try {
+        log.audit('Started', 'Started');
         log.audit('getInputData', context);
       } catch (e) {
         log.error('getInputData', JSON.parse(JSON.stringify(e)));
@@ -65,6 +66,8 @@ define([],
         log.audit('summarize', context);
       } catch (e) {
         log.error('summarize', JSON.parse(JSON.stringify(e)));
+      } finally {
+        log.audit('Finished', 'Finished');
       }
     }
     

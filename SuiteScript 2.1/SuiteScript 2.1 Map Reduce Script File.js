@@ -13,7 +13,7 @@ define([],
   /**
    * @return {{
    *   getInputData: Function,
-   *   map?: Function,
+   *   map: Function,
    *   reduce?: Function,
    *   summarize?: Function,
    * }}
@@ -26,6 +26,7 @@ define([],
      */
     const getInputData = context => {
       try {
+        log.audit('Started', 'Started');
         log.audit('getInputData', context);
       } catch (e) {
         log.error('getInputData', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -68,6 +69,8 @@ define([],
         const {dateCreated, seconds, usage, concurrency, yields} = context;
       } catch (e) {
         log.error('summarize', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
+      } finally {
+        log.audit('Finished', 'Finished');
       }
     };
     
