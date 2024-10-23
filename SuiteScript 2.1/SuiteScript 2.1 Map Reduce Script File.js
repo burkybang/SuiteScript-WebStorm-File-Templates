@@ -22,7 +22,7 @@ define([],
     
     /**
      * @param {GetInputContext} context
-     * @return {GetInputReturn|void}
+     * @return {GetInputReturn}
      */
     const getInputData = context => {
       try {
