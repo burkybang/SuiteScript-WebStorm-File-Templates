@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@hitc/netsuite-types": "^2024.2.11"
+  }
+}
