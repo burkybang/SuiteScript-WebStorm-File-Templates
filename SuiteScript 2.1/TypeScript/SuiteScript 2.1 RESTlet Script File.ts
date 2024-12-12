@@ -15,6 +15,7 @@ import * as log from 'N/log';
 const get: EntryPoints.RESTlet.get = requestParams => {
   try {
     log.audit('get', requestParams);
+    
   } catch (e) {
     log.error('get', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -24,6 +25,7 @@ const get: EntryPoints.RESTlet.get = requestParams => {
 const post: EntryPoints.RESTlet.post = requestBody => {
   try {
     log.audit('post', requestBody);
+    
   } catch (e) {
     log.error('post', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -33,6 +35,7 @@ const post: EntryPoints.RESTlet.post = requestBody => {
 const put: EntryPoints.RESTlet.put = requestBody => {
   try {
     log.audit('put', requestBody);
+    
   } catch (e) {
     log.error('put', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -42,6 +45,7 @@ const put: EntryPoints.RESTlet.put = requestBody => {
 const delete_: EntryPoints.RESTlet.delete_ = requestParams => {
   try {
     log.audit('delete', requestParams);
+    
   } catch (e) {
     log.error('delete', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }

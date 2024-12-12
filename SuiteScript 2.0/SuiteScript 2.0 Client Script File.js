@@ -39,6 +39,7 @@ define([],
     function pageInit(context) {
       try {
         console.log(SCRIPT_FILENAME + ': pageInit:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': pageInit:', e);
         log.error('pageInit', JSON.parse(JSON.stringify(e)));
@@ -52,6 +53,7 @@ define([],
     function validateField(context) {
       try {
         console.log(SCRIPT_FILENAME + ': validateField:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': validateField:', e);
         log.error('validateField', JSON.parse(JSON.stringify(e)));
@@ -66,6 +68,7 @@ define([],
     function fieldChanged(context) {
       try {
         console.log(SCRIPT_FILENAME + ': fieldChanged:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': fieldChanged:', e);
         log.error('fieldChanged', JSON.parse(JSON.stringify(e)));
@@ -79,6 +82,7 @@ define([],
     function postSourcing(context) {
       try {
         console.log(SCRIPT_FILENAME + ': postSourcing:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': postSourcing:', e);
         log.error('postSourcing', JSON.parse(JSON.stringify(e)));
@@ -92,6 +96,7 @@ define([],
     function lineInit(context) {
       try {
         console.log(SCRIPT_FILENAME + ': lineInit:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': lineInit:', e);
         log.error('lineInit', JSON.parse(JSON.stringify(e)));
@@ -105,6 +110,7 @@ define([],
     function validateLine(context) {
       try {
         console.log(SCRIPT_FILENAME + ': validateLine:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': validateLine:', e);
         log.error('validateLine', JSON.parse(JSON.stringify(e)));
@@ -119,6 +125,7 @@ define([],
     function validateInsert(context) {
       try {
         console.log(SCRIPT_FILENAME + ': validateInsert:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': validateInsert:', e);
         log.error('validateInsert', JSON.parse(JSON.stringify(e)));
@@ -133,6 +140,7 @@ define([],
     function validateDelete(context) {
       try {
         console.log(SCRIPT_FILENAME + ': validateDelete:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': validateDelete:', e);
         log.error('validateDelete', JSON.parse(JSON.stringify(e)));
@@ -147,6 +155,7 @@ define([],
     function sublistChanged(context) {
       try {
         console.log(SCRIPT_FILENAME + ': sublistChanged:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': sublistChanged:', e);
         log.error('sublistChanged', JSON.parse(JSON.stringify(e)));
@@ -160,6 +169,7 @@ define([],
     function saveRecord(context) {
       try {
         console.log(SCRIPT_FILENAME + ': saveRecord:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': saveRecord:', e);
         log.error('saveRecord', JSON.parse(JSON.stringify(e)));

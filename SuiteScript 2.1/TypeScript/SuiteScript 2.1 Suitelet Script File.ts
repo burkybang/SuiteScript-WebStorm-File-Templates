@@ -23,6 +23,7 @@ const onRequest: EntryPoints.Suitelet.onRequest = context => {
       },
     });
     const {request, response} = context;
+    
   } catch (e) {
     log.error('onRequest', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }

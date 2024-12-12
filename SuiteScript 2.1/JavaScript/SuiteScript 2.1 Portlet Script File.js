@@ -24,6 +24,7 @@ define([],
     const render = ({portlet, column, entity}) => {
       try {
         log.audit('render', {column, entity});
+        
       } catch (e) {
         log.error('render', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }

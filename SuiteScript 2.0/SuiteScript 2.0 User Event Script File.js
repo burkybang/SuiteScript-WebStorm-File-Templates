@@ -37,6 +37,7 @@ define([],
             parameters: context.request.parameters,
           },
         });
+        
       } catch (e) {
         log.error('beforeLoad', JSON.parse(JSON.stringify(e)));
       }
@@ -59,6 +60,7 @@ define([],
             id: context.oldRecord.id,
           },
         });
+        
       } catch (e) {
         log.error('beforeSubmit', JSON.parse(JSON.stringify(e)));
       }
@@ -81,6 +83,7 @@ define([],
             id: context.oldRecord.id,
           },
         });
+        
       } catch (e) {
         log.error('afterSubmit', JSON.parse(JSON.stringify(e)));
       }

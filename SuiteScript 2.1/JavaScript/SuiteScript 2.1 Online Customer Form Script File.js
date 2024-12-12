@@ -40,6 +40,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: pageInit:`, context);
         const {mode, currentRecord} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: pageInit:`, e);
         log.error('pageInit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -54,6 +55,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: validateField:`, context);
         const {currentRecord, sublistId, fieldId, line, column} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateField:`, e);
         log.error('validateField', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -69,6 +71,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: fieldChanged:`, context);
         const {currentRecord, sublistId, fieldId, line, column} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: fieldChanged:`, e);
         log.error('fieldChanged', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -83,6 +86,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: saveRecord:`, context);
         const {currentRecord} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: saveRecord:`, e);
         log.error('saveRecord', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

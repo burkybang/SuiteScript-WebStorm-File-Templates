@@ -27,6 +27,7 @@ define([],
           column: params.column,
           entity: params.entity,
         });
+        
       } catch (e) {
         log.error('render', JSON.parse(JSON.stringify(e)));
       }

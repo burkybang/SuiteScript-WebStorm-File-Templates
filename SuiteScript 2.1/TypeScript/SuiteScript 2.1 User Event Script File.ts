@@ -27,6 +27,7 @@ const beforeLoad: EntryPoints.UserEvent.beforeLoad = context => {
       },
     });
     const {type, newRecord, form, request} = context;
+    
   } catch (e) {
     log.error('beforeLoad', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -46,6 +47,7 @@ const beforeSubmit: EntryPoints.UserEvent.beforeSubmit = context => {
       },
     });
     const {type, newRecord, oldRecord} = context;
+    
   } catch (e) {
     log.error('beforeSubmit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -65,6 +67,7 @@ const afterSubmit: EntryPoints.UserEvent.afterSubmit = context => {
       },
     });
     const {type, newRecord, oldRecord} = context;
+    
   } catch (e) {
     log.error('afterSubmit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }

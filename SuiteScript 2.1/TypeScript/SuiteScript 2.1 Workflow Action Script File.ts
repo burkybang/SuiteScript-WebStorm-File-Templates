@@ -25,6 +25,7 @@ const onAction: EntryPoints.WorkflowAction.onAction = context => {
       },
     });
     const {oldRecord, newRecord} = context;
+    
   } catch (e) {
     log.error('onAction', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }

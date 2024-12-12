@@ -39,6 +39,7 @@ define([],
     function pageInit(context) {
       try {
         console.log(SCRIPT_FILENAME + ': pageInit:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': pageInit:', e);
         log.error('pageInit', JSON.parse(JSON.stringify(e)));
@@ -52,6 +53,7 @@ define([],
     function validateField(context) {
       try {
         console.log(SCRIPT_FILENAME + ': validateField:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': validateField:', e);
         log.error('validateField', JSON.parse(JSON.stringify(e)));
@@ -66,6 +68,7 @@ define([],
     function fieldChanged(context) {
       try {
         console.log(SCRIPT_FILENAME + ': fieldChanged:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': fieldChanged:', e);
         log.error('fieldChanged', JSON.parse(JSON.stringify(e)));
@@ -79,6 +82,7 @@ define([],
     function saveRecord(context) {
       try {
         console.log(SCRIPT_FILENAME + ': saveRecord:', context);
+        
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': saveRecord:', e);
         log.error('saveRecord', JSON.parse(JSON.stringify(e)));

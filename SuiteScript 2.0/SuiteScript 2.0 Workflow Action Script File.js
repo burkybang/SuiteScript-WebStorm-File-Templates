@@ -33,6 +33,7 @@ define([],
             id: context.oldRecord.id,
           },
         });
+        
       } catch (e) {
         log.error('onAction', JSON.parse(JSON.stringify(e)));
       }

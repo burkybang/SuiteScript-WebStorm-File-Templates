@@ -40,6 +40,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: pageInit:`, context);
         const {mode, currentRecord} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: pageInit:`, e);
         log.error('pageInit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -54,6 +55,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: validateField:`, context);
         const {currentRecord, sublistId, fieldId, line, column} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateField:`, e);
         log.error('validateField', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -69,6 +71,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: fieldChanged:`, context);
         const {currentRecord, sublistId, fieldId, line, column} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: fieldChanged:`, e);
         log.error('fieldChanged', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -83,6 +86,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: postSourcing:`, context);
         const {currentRecord, sublistId, fieldId} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: postSourcing:`, e);
         log.error('postSourcing', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -97,6 +101,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: lineInit:`, context);
         const {currentRecord, sublistId} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: lineInit:`, e);
         log.error('lineInit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -111,6 +116,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: validateLine:`, context);
         const {currentRecord, sublistId} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateLine:`, e);
         log.error('validateLine', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -126,6 +132,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: validateInsert:`, context);
         const {currentRecord, sublistId} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateInsert:`, e);
         log.error('validateInsert', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -141,6 +148,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: validateDelete:`, context);
         const {currentRecord, sublistId} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: validateDelete:`, e);
         log.error('validateDelete', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -156,6 +164,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: sublistChanged:`, context);
         const {currentRecord, sublistId} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: sublistChanged:`, e);
         log.error('sublistChanged', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -170,6 +179,7 @@ define([],
       try {
         console.log(`\${SCRIPT_FILENAME}: saveRecord:`, context);
         const {currentRecord} = context;
+        
       } catch (e) {
         console.error(`\${SCRIPT_FILENAME}: saveRecord:`, e);
         log.error('saveRecord', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

@@ -15,6 +15,7 @@ import * as log from 'N/log';
 const each: EntryPoints.MassUpdate.each = ({id, type}) => {
   try {
     log.audit('each', {id, type});
+    
   } catch (e) {
     log.error('each', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }

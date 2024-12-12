@@ -15,6 +15,7 @@ import * as log from 'N/log';
 const beforeInstall: EntryPoints.BundleInstallation.beforeInstall = ({version}) => {
   try {
     log.audit('beforeInstall', {version});
+    
   } catch (e) {
     log.error('beforeInstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -23,6 +24,7 @@ const beforeInstall: EntryPoints.BundleInstallation.beforeInstall = ({version}) 
 const afterInstall: EntryPoints.BundleInstallation.afterInstall = ({version}) => {
   try {
     log.audit('afterInstall', {version});
+    
   } catch (e) {
     log.error('afterInstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -31,6 +33,7 @@ const afterInstall: EntryPoints.BundleInstallation.afterInstall = ({version}) =>
 const beforeUpdate: EntryPoints.BundleInstallation.beforeUpdate = ({toVersion, fromVersion}) => {
   try {
     log.audit('beforeUpdate', {toVersion, fromVersion});
+    
   } catch (e) {
     log.error('beforeUpdate', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -39,6 +42,7 @@ const beforeUpdate: EntryPoints.BundleInstallation.beforeUpdate = ({toVersion, f
 const afterUpdate: EntryPoints.BundleInstallation.afterUpdate = ({toVersion, fromVersion}) => {
   try {
     log.audit('afterUpdate', {toVersion, fromVersion});
+    
   } catch (e) {
     log.error('afterUpdate', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
@@ -47,6 +51,7 @@ const afterUpdate: EntryPoints.BundleInstallation.afterUpdate = ({toVersion, fro
 const beforeUninstall: EntryPoints.BundleInstallation.beforeUninstall = ({version}) => {
   try {
     log.audit('beforeUninstall', {version});
+    
   } catch (e) {
     log.error('beforeUninstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }
