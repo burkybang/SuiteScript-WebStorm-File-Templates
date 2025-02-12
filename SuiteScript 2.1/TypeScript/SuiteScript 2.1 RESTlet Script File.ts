@@ -11,6 +11,7 @@
 
 import {EntryPoints} from 'N/types';
 import * as log from 'N/log';
+import * as restlet from 'N/scriptTypes/restlet';
 
 const get: EntryPoints.RESTlet.get = requestParams => {
   try {

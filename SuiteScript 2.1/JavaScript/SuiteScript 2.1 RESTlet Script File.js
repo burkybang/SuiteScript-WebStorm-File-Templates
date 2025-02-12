@@ -8,9 +8,10 @@
  * @see [Type Declarations]{@link https://github.com/burkybang/SuiteScript-2.0-Type-Declarations}
  * @author
  */
-define([],
+define(['N/scriptTypes/restlet'],
   
   /**
+   * @param {restlet} restlet
    * @return {{
    *   get?: Function,
    *   post?: Function,
@@ -18,12 +19,11 @@ define([],
    *   delete?: Function,
    * }}
    */
-  () => {
+  (restlet) => {
     
     /**
      * @param {Object} requestParams - The parameters from the HTTP request URL as key-value pairs
-     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
-     * or an Object when request "Content-Type" is "application/json"
+     * @return {restlet.Response}
      */
     const get = requestParams => {
       try {
@@ -37,8 +37,7 @@ define([],
     /**
      * @param {string|Object} requestBody - Request body is a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
-     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
-     * or an Object when request "Content-Type" is "application/json"
+     * @return {restlet.Response}
      */
     const post = requestBody => {
       try {
@@ -52,8 +51,7 @@ define([],
     /**
      * @param {string|Object} requestBody - Request body is a String when request "Content-Type" is "text/plain"
      * or an Object when request "Content-Type" is "application/json"
-     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
-     * or an Object when request "Content-Type" is "application/json"
+     * @return {restlet.Response}
      */
     const put = requestBody => {
       try {
@@ -66,8 +64,7 @@ define([],
     
     /**
      * @param {Object} requestParams - The parameters from the HTTP request URL as key-value pairs
-     * @return {string|Object} - Returns a String when request "Content-Type" is "text/plain"
-     * or an Object when request "Content-Type" is "application/json"
+     * @return {restlet.Response}
      */
     const delete_ = requestParams => {
       try {
