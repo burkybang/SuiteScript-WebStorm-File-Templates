@@ -33,6 +33,15 @@ define([],
     const SCRIPT_FILENAME = '${NAME}';
     
     /**
+     * Set the console context to the script filename.
+     * Filter the console by `context:${NAME}` to see only the logs from this script.
+     * @type {Console}
+     */
+    const console = 'context' in window.console && window.console.context instanceof Function ?
+      window.console.context(SCRIPT_FILENAME) :
+      window.console;
+    
+    /**
      * @param {PageInitContext} context
      * @return {void}
      */
