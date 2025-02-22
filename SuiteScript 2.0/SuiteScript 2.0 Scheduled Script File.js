@@ -23,10 +23,13 @@ define([],
      */
     function execute(context) {
       try {
+        log.audit('Started', 'Started');
         log.audit('execute', context.type);
         
       } catch (e) {
         log.error('execute', JSON.parse(JSON.stringify(e)));
+      } finally {
+        log.audit('Finished', 'Finished');
       }
     }
     
