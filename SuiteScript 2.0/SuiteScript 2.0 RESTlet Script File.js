@@ -12,12 +12,6 @@ define(['N/scriptTypes/restlet'],
   
   /**
    * @param {restlet} restlet
-   * @return {{
-   *   get?: Function,
-   *   post?: Function,
-   *   put?: Function,
-   *   delete?: Function,
-   * }}
    */
   function (restlet) {
     

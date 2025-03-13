@@ -11,11 +11,7 @@
 define([],
   
   /**
-   * @return {{
-   *   beforeLoad?: Function,
-   *   beforeSubmit?: Function,
-   *   afterSubmit?: Function,
-   * }}
+   *
    */
   function () {
     

@@ -11,12 +11,7 @@
 define([],
   
   /**
-   * @return {{
-   *   getInputData: Function,
-   *   map: Function,
-   *   reduce?: Function,
-   *   summarize?: Function,
-   * }}
+   *
    */
   function () {
     

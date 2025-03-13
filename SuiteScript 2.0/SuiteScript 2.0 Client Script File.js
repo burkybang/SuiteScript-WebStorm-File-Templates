@@ -11,18 +11,7 @@
 define([],
   
   /**
-   * @return {{
-   *   pageInit?: Function,
-   *   validateField?: Function,
-   *   fieldChanged?: Function,
-   *   postSourcing?: Function,
-   *   lineInit?: Function,
-   *   validateLine?: Function,
-   *   validateInsert?: Function,
-   *   validateDelete?: Function,
-   *   sublistChanged?: Function,
-   *   saveRecord?: Function,
-   * }}
+   *
    */
   function () {
     

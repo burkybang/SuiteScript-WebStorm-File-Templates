@@ -11,9 +11,7 @@
 define([],
   
   /**
-   * @return {{
-   *   onRequest: Function,
-   * }}
+   *
    */
   function () {
     
