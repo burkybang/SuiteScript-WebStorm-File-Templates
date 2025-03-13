@@ -30,7 +30,8 @@ define([],
     const run = params => {
       try {
         const {fromVersion, toVersion} = params;
-        log.audit('run', {fromVersion, toVersion});
+        
+        log.debug('run', {fromVersion, toVersion});
         
         if (fromVersion) {
           if (fromVersion === toVersion) {
@@ -53,7 +54,7 @@ define([],
      * @return {void}
      */
     const onInstall = params => {
-      log.audit('onInstall', 'onInstall');
+      log.debug('Type', 'Install');
       const {toVersion} = params;
       
     };
@@ -64,7 +65,7 @@ define([],
      * @return {void}
      */
     const onUpdate = params => {
-      log.audit('onUpdate', 'onUpdate');
+      log.debug('Type', 'Update');
       const {fromVersion, toVersion} = params;
       
     };
@@ -75,7 +76,7 @@ define([],
      * @return {void}
      */
     const onDeploy = params => {
-      log.audit('onDeploy', 'onDeploy');
+      log.debug('Type', 'Deploy');
       const {toVersion} = params;
       
     };

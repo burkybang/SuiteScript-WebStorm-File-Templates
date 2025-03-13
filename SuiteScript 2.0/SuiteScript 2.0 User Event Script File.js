@@ -25,18 +25,7 @@ define([],
      */
     function beforeLoad(context) {
       try {
-        log.audit('beforeLoad', {
-          type: context.type,
-          form: context.form,
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
-          request: !context.request ? null : {
-            url: context.request.url,
-            parameters: context.request.parameters,
-          },
-        });
+        log.debug('beforeLoad', {type: context.type});
         
       } catch (e) {
         log.error('beforeLoad', JSON.parse(JSON.stringify(e)));
@@ -49,17 +38,7 @@ define([],
      */
     function beforeSubmit(context) {
       try {
-        log.audit('beforeSubmit', {
-          type: context.type,
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
-          oldRecord: !context.oldRecord ? null : {
-            type: context.oldRecord.type,
-            id: context.oldRecord.id,
-          },
-        });
+        log.debug('beforeSubmit', {type: context.type});
         
       } catch (e) {
         log.error('beforeSubmit', JSON.parse(JSON.stringify(e)));
@@ -72,17 +51,7 @@ define([],
      */
     function afterSubmit(context) {
       try {
-        log.audit('afterSubmit', {
-          type: context.type,
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
-          oldRecord: !context.oldRecord ? null : {
-            type: context.oldRecord.type,
-            id: context.oldRecord.id,
-          },
-        });
+        log.debug('afterSubmit', {type: context.type});
         
       } catch (e) {
         log.error('afterSubmit', JSON.parse(JSON.stringify(e)));

@@ -23,7 +23,7 @@ define([],
      */
     function onRequest(context) {
       try {
-        log.audit('onRequest', {
+        log.debug('onRequest', {
           request: {
             clientIpAddress: context.request.clientIpAddress,
             url: context.request.url,

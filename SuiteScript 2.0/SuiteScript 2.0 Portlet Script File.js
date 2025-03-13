@@ -23,7 +23,7 @@ define([],
      */
     function render(params) {
       try {
-        log.audit('render', {
+        log.debug('render', {
           column: params.column,
           entity: params.entity,
         });

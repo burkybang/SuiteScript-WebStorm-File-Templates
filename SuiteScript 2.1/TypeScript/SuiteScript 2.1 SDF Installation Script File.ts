@@ -15,7 +15,8 @@ import * as log from 'N/log';
 const run: EntryPoints.SDFInstallation.run = params => {
   try {
     const {fromVersion, toVersion} = params;
-    log.audit('run', {fromVersion, toVersion});
+    
+    log.debug('run', {fromVersion, toVersion});
     
     if (fromVersion) {
       if (fromVersion === toVersion) {
@@ -33,19 +34,19 @@ const run: EntryPoints.SDFInstallation.run = params => {
 };
 
 const onInstall = (params: EntryPoints.SDFInstallation.runContext) => {
-  log.audit('onInstall', 'onInstall');
+  log.debug('Type', 'Install');
   const {toVersion} = params;
   
 };
 
 const onUpdate = (params: EntryPoints.SDFInstallation.runContext) => {
-  log.audit('onUpdate', 'onUpdate');
+  log.debug('Type', 'Update');
   const {fromVersion, toVersion} = params;
   
 };
 
 const onDeploy = (params: EntryPoints.SDFInstallation.runContext) => {
-  log.audit('onDeploy', 'onDeploy');
+  log.debug('Type', 'Deploy');
   const {toVersion} = params;
   
 };

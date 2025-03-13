@@ -23,15 +23,9 @@ define([],
      */
     function onAction(context) {
       try {
-        log.audit('onAction', {
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
-          oldRecord: !context.oldRecord ? null : {
-            type: context.oldRecord.type,
-            id: context.oldRecord.id,
-          },
+        log.debug('onAction', {
+          type: context.type,
+          workflowId: context.workflowId,
         });
         
       } catch (e) {

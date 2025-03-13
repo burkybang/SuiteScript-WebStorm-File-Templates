@@ -15,8 +15,9 @@ import * as log from 'N/log';
 const execute: EntryPoints.Scheduled.execute = context => {
   try {
     log.audit('Started', 'Started');
-    log.audit('execute', `Type: ${context.type}`);
     const {type} = context;
+    
+    log.debug('execute', `Type: ${type}`);
     
   } catch (e) {
     log.error('execute', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

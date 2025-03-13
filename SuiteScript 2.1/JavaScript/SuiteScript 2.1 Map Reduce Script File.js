@@ -27,7 +27,7 @@ define([],
     const getInputData = context => {
       try {
         log.audit('Started', 'Started');
-        log.audit('getInputData', context);
+        log.debug('getInputData', context);
         
       } catch (e) {
         log.error('getInputData', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -40,7 +40,7 @@ define([],
      */
     const map = context => {
       try {
-        log.audit('map', context);
+        log.debug('map', context);
         const {key, value} = context;
         
       } catch (e) {
@@ -54,7 +54,7 @@ define([],
      */
     const reduce = context => {
       try {
-        log.audit('reduce', context);
+        log.debug('reduce', context);
         const {key, values} = context;
         
       } catch (e) {
@@ -68,7 +68,7 @@ define([],
      */
     const summarize = context => {
       try {
-        log.audit('summarize', context);
+        log.debug('summarize', context);
         const {dateCreated, seconds, usage, concurrency, yields} = context;
         
       } catch (e) {

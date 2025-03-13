@@ -22,12 +22,13 @@ define([],
   () => {
     
     /**
-     * @param {number} version - The version of the bundle that is being installed
+     * @param {Object} params
+     * @param {number} params.version - The version of the bundle that is being installed
      * @return {void}
      */
     const beforeInstall = ({version}) => {
       try {
-        log.audit('beforeInstall', {version});
+        log.debug('beforeInstall', {version});
         
       } catch (e) {
         log.error('beforeInstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -35,12 +36,13 @@ define([],
     };
     
     /**
-     * @param {number} version - The version of the bundle that was just installed
+     * @param {Object} params
+     * @param {number} params.version - The version of the bundle that was just installed
      * @return {void}
      */
     const afterInstall = ({version}) => {
       try {
-        log.audit('afterInstall', {version});
+        log.debug('afterInstall', {version});
         
       } catch (e) {
         log.error('afterInstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -48,13 +50,14 @@ define([],
     };
     
     /**
-     * @param {number} fromVersion - The version of the bundle that is currently installed
-     * @param {number} toVersion - The version of the bundle that is being installed
+     * @param {Object} params
+     * @param {number} params.fromVersion - The version of the bundle that is currently installed
+     * @param {number} params.toVersion - The version of the bundle that is being installed
      * @return {void}
      */
     const beforeUpdate = ({toVersion, fromVersion}) => {
       try {
-        log.audit('beforeUpdate', {toVersion, fromVersion});
+        log.debug('beforeUpdate', {toVersion, fromVersion});
         
       } catch (e) {
         log.error('beforeUpdate', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -62,13 +65,14 @@ define([],
     };
     
     /**
-     * @param {number} fromVersion - The version of the bundle that was previously installed
-     * @param {number} toVersion - The version of the bundle that was just installed
+     * @param {Object} params
+     * @param {number} params.fromVersion - The version of the bundle that was previously installed
+     * @param {number} params.toVersion - The version of the bundle that was just installed
      * @return {void}
      */
     const afterUpdate = ({toVersion, fromVersion}) => {
       try {
-        log.audit('afterUpdate', {toVersion, fromVersion});
+        log.debug('afterUpdate', {toVersion, fromVersion});
         
       } catch (e) {
         log.error('afterUpdate', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -76,12 +80,13 @@ define([],
     };
     
     /**
-     * @param {number} version - The version of the bundle that is being uninstalled
+     * @param {Object} params
+     * @param {number} params.version - The version of the bundle that is being uninstalled
      * @return {void}
      */
     const beforeUninstall = ({version}) => {
       try {
-        log.audit('beforeUninstall', {version});
+        log.debug('beforeUninstall', {version});
         
       } catch (e) {
         log.error('beforeUninstall', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

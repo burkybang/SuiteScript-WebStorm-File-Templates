@@ -12,9 +12,11 @@
 import {EntryPoints} from 'N/types';
 import * as log from 'N/log';
 
-const render: EntryPoints.Portlet.render = ({portlet, column, entity}) => {
+const render: EntryPoints.Portlet.render = params => {
   try {
-    log.audit('render', {column, entity});
+    const {column, entity, portlet} = params;
+    
+    log.debug('render', {column, entity});
     
   } catch (e) {
     log.error('render', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

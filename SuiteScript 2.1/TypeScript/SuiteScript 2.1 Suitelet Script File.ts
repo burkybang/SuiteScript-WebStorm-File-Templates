@@ -14,15 +14,16 @@ import * as log from 'N/log';
 
 const onRequest: EntryPoints.Suitelet.onRequest = context => {
   try {
+    const {request, response} = context;
+    
     log.audit('onRequest', {
       request: {
-        clientIpAddress: context.request.clientIpAddress,
-        url: context.request.url,
-        method: context.request.method,
-        parameters: context.request.parameters,
+        clientIpAddress: request.clientIpAddress,
+        url: request.url,
+        method: request.method,
+        parameters: request.parameters,
       },
     });
-    const {request, response} = context;
     
   } catch (e) {
     log.error('onRequest', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

@@ -15,7 +15,7 @@ import * as log from 'N/log';
 const getInputData: EntryPoints.MapReduce.getInputData = context => {
   try {
     log.audit('Started', 'Started');
-    log.audit('getInputData', context);
+    log.debug('getInputData', context);
     
   } catch (e) {
     log.error('getInputData', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -24,7 +24,7 @@ const getInputData: EntryPoints.MapReduce.getInputData = context => {
 
 const map: EntryPoints.MapReduce.map = context => {
   try {
-    log.audit('map', context);
+    log.debug('map', context);
     const {key, value} = context;
     
   } catch (e) {
@@ -34,7 +34,7 @@ const map: EntryPoints.MapReduce.map = context => {
 
 const reduce: EntryPoints.MapReduce.reduce = context => {
   try {
-    log.audit('reduce', context);
+    log.debug('reduce', context);
     const {key, values} = context;
     
   } catch (e) {
@@ -44,7 +44,7 @@ const reduce: EntryPoints.MapReduce.reduce = context => {
 
 const summarize: EntryPoints.MapReduce.summarize = context => {
   try {
-    log.audit('summarize', context);
+    log.debug('summarize', context);
     const {dateCreated, seconds, usage, concurrency, yields} = context;
     
   } catch (e) {

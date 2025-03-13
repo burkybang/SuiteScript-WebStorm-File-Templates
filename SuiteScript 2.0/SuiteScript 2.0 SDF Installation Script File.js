@@ -29,7 +29,7 @@ define([],
      */
     function run(params) {
       try {
-        log.audit('run', {
+        log.debug('run', {
           fromVersion: params.fromVersion,
           toVersion: params.toVersion,
         });
@@ -55,7 +55,7 @@ define([],
      * @return {void}
      */
     function onInstall(params) {
-      log.audit('onInstall', 'onInstall');
+      log.debug('Type', 'Install');
       
     }
     
@@ -65,7 +65,7 @@ define([],
      * @return {void}
      */
     function onUpdate(params) {
-      log.audit('onUpdate', 'onUpdate');
+      log.debug('Type', 'Update');
       
     }
     
@@ -75,7 +75,7 @@ define([],
      * @return {void}
      */
     function onDeploy(params) {
-      log.audit('onDeploy', 'onDeploy');
+      log.debug('Type', 'Deploy');
       
     }
     

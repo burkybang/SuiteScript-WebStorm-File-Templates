@@ -23,17 +23,9 @@ define([],
      */
     const onAction = context => {
       try {
-        log.audit('onAction', {
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
-          oldRecord: !context.oldRecord ? null : {
-            type: context.oldRecord.type,
-            id: context.oldRecord.id,
-          },
-        });
-        const {oldRecord, newRecord} = context;
+        const {oldRecord, newRecord, type, workflowId} = context;
+        
+        log.debug('onAction', {type, workflowId});
         
       } catch (e) {
         log.error('onAction', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

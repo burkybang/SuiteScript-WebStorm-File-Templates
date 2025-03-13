@@ -24,7 +24,7 @@ define([],
     function execute(context) {
       try {
         log.audit('Started', 'Started');
-        log.audit('execute', context.type);
+        log.debug('execute', context.type);
         
       } catch (e) {
         log.error('execute', JSON.parse(JSON.stringify(e)));

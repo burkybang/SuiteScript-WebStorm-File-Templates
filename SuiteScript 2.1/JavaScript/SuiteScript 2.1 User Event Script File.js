@@ -25,19 +25,9 @@ define([],
      */
     const beforeLoad = context => {
       try {
-        log.audit('beforeLoad', {
-          type: context.type,
-          form: context.form,
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
-          request: !context.request ? null : {
-            url: context.request.url,
-            parameters: context.request.parameters,
-          },
-        });
         const {type, newRecord, form, request} = context;
+        
+        log.debug('beforeLoad', {type});
         
       } catch (e) {
         log.error('beforeLoad', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -50,18 +40,9 @@ define([],
      */
     const beforeSubmit = context => {
       try {
-        log.audit('beforeSubmit', {
-          type: context.type,
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
-          oldRecord: !context.oldRecord ? null : {
-            type: context.oldRecord.type,
-            id: context.oldRecord.id,
-          },
-        });
         const {type, newRecord, oldRecord} = context;
+        
+        log.debug('beforeSubmit', {type});
         
       } catch (e) {
         log.error('beforeSubmit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -74,18 +55,9 @@ define([],
      */
     const afterSubmit = context => {
       try {
-        log.audit('afterSubmit', {
-          type: context.type,
-          newRecord: {
-            type: context.newRecord.type,
-            id: context.newRecord.id,
-          },
-          oldRecord: !context.oldRecord ? null : {
-            type: context.oldRecord.type,
-            id: context.oldRecord.id,
-          },
-        });
         const {type, newRecord, oldRecord} = context;
+        
+        log.debug('afterSubmit', {type});
         
       } catch (e) {
         log.error('afterSubmit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

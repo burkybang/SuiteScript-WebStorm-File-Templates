@@ -27,7 +27,7 @@ define(['N/scriptTypes/restlet'],
      */
     const get = requestParams => {
       try {
-        log.audit('get', requestParams);
+        log.debug('get', requestParams);
         
       } catch (e) {
         log.error('get', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -41,7 +41,7 @@ define(['N/scriptTypes/restlet'],
      */
     const post = requestBody => {
       try {
-        log.audit('post', requestBody);
+        log.debug('post', requestBody);
         
       } catch (e) {
         log.error('post', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -55,7 +55,7 @@ define(['N/scriptTypes/restlet'],
      */
     const put = requestBody => {
       try {
-        log.audit('put', requestBody);
+        log.debug('put', requestBody);
         
       } catch (e) {
         log.error('put', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
@@ -68,7 +68,7 @@ define(['N/scriptTypes/restlet'],
      */
     const delete_ = requestParams => {
       try {
-        log.audit('delete', requestParams);
+        log.debug('delete', requestParams);
         
       } catch (e) {
         log.error('delete', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

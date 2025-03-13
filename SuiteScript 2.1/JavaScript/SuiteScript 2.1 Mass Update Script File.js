@@ -21,9 +21,10 @@ define([],
      * @param {EachParams} params
      * @return {void}
      */
-    const each = ({id, type}) => {
+    const each = params => {
       try {
-        log.audit('each', {id, type});
+        log.debug('each', params);
+        const {id, type} = params;
         
       } catch (e) {
         log.error('each', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

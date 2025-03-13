@@ -24,8 +24,9 @@ define([],
     const execute = context => {
       try {
         log.audit('Started', 'Started');
-        log.audit('execute', `Type: ${context.type}`);
         const {type} = context;
+        
+        log.debug('execute', `Type: ${type}`);
         
       } catch (e) {
         log.error('execute', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

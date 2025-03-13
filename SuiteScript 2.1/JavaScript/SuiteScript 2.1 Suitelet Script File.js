@@ -23,15 +23,16 @@ define([],
      */
     const onRequest = context => {
       try {
-        log.audit('onRequest', {
+        const {request, response} = context;
+        
+        log.debug('onRequest', {
           request: {
-            clientIpAddress: context.request.clientIpAddress,
-            url: context.request.url,
-            method: context.request.method,
-            parameters: context.request.parameters,
+            clientIpAddress: request.clientIpAddress,
+            url: request.url,
+            method: request.method,
+            parameters: request.parameters,
           },
         });
-        const {request, response} = context;
         
       } catch (e) {
         log.error('onRequest', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

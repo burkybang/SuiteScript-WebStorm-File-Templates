@@ -23,7 +23,7 @@ define([],
      */
     function each(params) {
       try {
-        log.audit('each', params);
+        log.debug('each', params);
         
       } catch (e) {
         log.error('each', JSON.parse(JSON.stringify(e)));

@@ -21,9 +21,11 @@ define([],
      * @param {PortletParams} params
      * @return {void}
      */
-    const render = ({portlet, column, entity}) => {
+    const render = params => {
       try {
-        log.audit('render', {column, entity});
+        const {column, entity, portlet} = params;
+        
+        log.debug('render', {column, entity});
         
       } catch (e) {
         log.error('render', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

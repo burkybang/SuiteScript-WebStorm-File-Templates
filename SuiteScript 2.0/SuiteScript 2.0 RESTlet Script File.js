@@ -27,7 +27,7 @@ define(['N/scriptTypes/restlet'],
      */
     function get(requestParams) {
       try {
-        log.audit('get', requestParams);
+        log.debug('get', requestParams);
         
       } catch (e) {
         log.error('get', JSON.parse(JSON.stringify(e)));
@@ -41,7 +41,7 @@ define(['N/scriptTypes/restlet'],
      */
     function post(requestBody) {
       try {
-        log.audit('post', requestBody);
+        log.debug('post', requestBody);
         
       } catch (e) {
         log.error('post', JSON.parse(JSON.stringify(e)));
@@ -55,7 +55,7 @@ define(['N/scriptTypes/restlet'],
      */
     function put(requestBody) {
       try {
-        log.audit('put', requestBody);
+        log.debug('put', requestBody);
         
       } catch (e) {
         log.error('put', JSON.parse(JSON.stringify(e)));
@@ -68,7 +68,7 @@ define(['N/scriptTypes/restlet'],
      */
     function delete_(requestParams) {
       try {
-        log.audit('delete', requestParams);
+        log.debug('delete', requestParams);
         
       } catch (e) {
         log.error('delete', JSON.parse(JSON.stringify(e)));
