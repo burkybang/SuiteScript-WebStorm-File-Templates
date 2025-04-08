@@ -15,14 +15,6 @@ import * as log from 'N/log';
 /** Used in logs to help identify which client script is doing the logging */
 const SCRIPT_FILENAME: string = '${NAME}';
 
-/**
- * Set the console context to the script filename.
- * Filter the console by `context:${NAME}` to see only the logs from this script.
- */
-const console: Console = 'context' in window.console && window.console.context instanceof Function ?
-  window.console.context(SCRIPT_FILENAME) :
-  window.console;
-
 const pageInit: EntryPoints.Client.pageInit = context => {
   try {
     console.log(`\${SCRIPT_FILENAME}: pageInit:`, context);
