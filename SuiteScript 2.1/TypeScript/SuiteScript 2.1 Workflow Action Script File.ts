@@ -14,17 +14,7 @@ import * as log from 'N/log';
 
 const onAction: EntryPoints.WorkflowAction.onAction = context => {
   try {
-    log.audit('onAction', {
-      newRecord: {
-        type: context.newRecord.type,
-        id: context.newRecord.id,
-      },
-      oldRecord: !context.oldRecord ? null : {
-        type: context.oldRecord.type,
-        id: context.oldRecord.id,
-      },
-    });
-    const {oldRecord, newRecord} = context;
+    const {newRecord, oldRecord} = context;
     
   } catch (e) {
     log.error('onAction', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

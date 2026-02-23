@@ -17,7 +17,6 @@ const SCRIPT_FILENAME: string = '${NAME}';
 
 const pageInit: EntryPoints.Client.pageInit = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: pageInit:`, context);
     const {mode, currentRecord} = context;
     
   } catch (e) {
@@ -28,7 +27,6 @@ const pageInit: EntryPoints.Client.pageInit = context => {
 
 const validateField: EntryPoints.Client.validateField = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: validateField:`, context);
     const {currentRecord, sublistId, fieldId, line, column} = context;
     
   } catch (e) {
@@ -40,7 +38,6 @@ const validateField: EntryPoints.Client.validateField = context => {
 
 const fieldChanged: EntryPoints.Client.fieldChanged = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: fieldChanged:`, context);
     const {currentRecord, sublistId, fieldId, line, column} = context;
     
   } catch (e) {
@@ -51,7 +48,6 @@ const fieldChanged: EntryPoints.Client.fieldChanged = context => {
 
 const postSourcing: EntryPoints.Client.postSourcing = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: postSourcing:`, context);
     const {currentRecord, sublistId, fieldId} = context;
     
   } catch (e) {
@@ -62,7 +58,6 @@ const postSourcing: EntryPoints.Client.postSourcing = context => {
 
 const lineInit: EntryPoints.Client.lineInit = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: lineInit:`, context);
     const {currentRecord, sublistId} = context;
     
   } catch (e) {
@@ -73,7 +68,6 @@ const lineInit: EntryPoints.Client.lineInit = context => {
 
 const validateLine: EntryPoints.Client.validateLine = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: validateLine:`, context);
     const {currentRecord, sublistId} = context;
     
   } catch (e) {
@@ -85,7 +79,6 @@ const validateLine: EntryPoints.Client.validateLine = context => {
 
 const validateInsert: EntryPoints.Client.validateInsert = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: validateInsert:`, context);
     const {currentRecord, sublistId} = context;
     
   } catch (e) {
@@ -97,7 +90,6 @@ const validateInsert: EntryPoints.Client.validateInsert = context => {
 
 const validateDelete: EntryPoints.Client.validateDelete = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: validateDelete:`, context);
     const {currentRecord, sublistId} = context;
     
   } catch (e) {
@@ -109,7 +101,6 @@ const validateDelete: EntryPoints.Client.validateDelete = context => {
 
 const sublistChanged: EntryPoints.Client.sublistChanged = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: sublistChanged:`, context);
     const {currentRecord, sublistId} = context;
     
   } catch (e) {
@@ -120,7 +111,6 @@ const sublistChanged: EntryPoints.Client.sublistChanged = context => {
 
 const saveRecord: EntryPoints.Client.saveRecord = context => {
   try {
-    console.log(`\${SCRIPT_FILENAME}: saveRecord:`, context);
     const {currentRecord} = context;
     
   } catch (e) {

@@ -16,15 +16,6 @@ const onRequest: EntryPoints.Suitelet.onRequest = context => {
   try {
     const {request, response} = context;
     
-    log.audit('onRequest', {
-      request: {
-        clientIpAddress: request.clientIpAddress,
-        url: request.url,
-        method: request.method,
-        parameters: request.parameters,
-      },
-    });
-    
   } catch (e) {
     log.error('onRequest', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }

@@ -27,10 +27,6 @@ define([],
      */
     function run(params) {
       try {
-        log.debug('run', {
-          fromVersion: params.fromVersion,
-          toVersion: params.toVersion,
-        });
         
         if (params.fromVersion) {
           if (params.fromVersion === params.toVersion) {

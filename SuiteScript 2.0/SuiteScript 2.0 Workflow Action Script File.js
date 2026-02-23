@@ -21,10 +21,6 @@ define([],
      */
     function onAction(context) {
       try {
-        log.debug('onAction', {
-          type: context.type,
-          workflowId: context.workflowId,
-        });
         
       } catch (e) {
         log.error('onAction', JSON.parse(JSON.stringify(e)));

@@ -21,7 +21,6 @@ define([],
      */
     function customizeGlImpact(context) {
       try {
-        log.debug('customizeGlImpact', context);
         
       } catch (e) {
         log.error('customizeGlImpact', JSON.parse(JSON.stringify(e)));

@@ -29,8 +29,6 @@ define([],
       try {
         const {fromVersion, toVersion} = params;
         
-        log.debug('run', {fromVersion, toVersion});
-        
         if (fromVersion) {
           if (fromVersion === toVersion) {
             onDeploy(params);

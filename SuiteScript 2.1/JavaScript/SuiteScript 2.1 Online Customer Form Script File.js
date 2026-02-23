@@ -27,7 +27,6 @@ define([],
      */
     const pageInit = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: pageInit:`, context);
         const {mode, currentRecord} = context;
         
       } catch (e) {
@@ -42,7 +41,6 @@ define([],
      */
     const validateField = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: validateField:`, context);
         const {currentRecord, sublistId, fieldId, line, column} = context;
         
       } catch (e) {
@@ -58,7 +56,6 @@ define([],
      */
     const fieldChanged = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: fieldChanged:`, context);
         const {currentRecord, sublistId, fieldId, line, column} = context;
         
       } catch (e) {
@@ -73,7 +70,6 @@ define([],
      */
     const saveRecord = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: saveRecord:`, context);
         const {currentRecord} = context;
         
       } catch (e) {

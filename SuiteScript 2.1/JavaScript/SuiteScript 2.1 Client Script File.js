@@ -27,7 +27,6 @@ define([],
      */
     const pageInit = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: pageInit:`, context);
         const {mode, currentRecord} = context;
         
       } catch (e) {
@@ -42,7 +41,6 @@ define([],
      */
     const validateField = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: validateField:`, context);
         const {currentRecord, sublistId, fieldId, line, column} = context;
         
       } catch (e) {
@@ -58,7 +56,6 @@ define([],
      */
     const fieldChanged = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: fieldChanged:`, context);
         const {currentRecord, sublistId, fieldId, line, column} = context;
         
       } catch (e) {
@@ -73,7 +70,6 @@ define([],
      */
     const postSourcing = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: postSourcing:`, context);
         const {currentRecord, sublistId, fieldId} = context;
         
       } catch (e) {
@@ -88,7 +84,6 @@ define([],
      */
     const lineInit = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: lineInit:`, context);
         const {currentRecord, sublistId} = context;
         
       } catch (e) {
@@ -103,7 +98,6 @@ define([],
      */
     const validateLine = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: validateLine:`, context);
         const {currentRecord, sublistId} = context;
         
       } catch (e) {
@@ -119,7 +113,6 @@ define([],
      */
     const validateInsert = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: validateInsert:`, context);
         const {currentRecord, sublistId} = context;
         
       } catch (e) {
@@ -135,7 +128,6 @@ define([],
      */
     const validateDelete = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: validateDelete:`, context);
         const {currentRecord, sublistId} = context;
         
       } catch (e) {
@@ -151,7 +143,6 @@ define([],
      */
     const sublistChanged = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: sublistChanged:`, context);
         const {currentRecord, sublistId} = context;
         
       } catch (e) {
@@ -166,7 +157,6 @@ define([],
      */
     const saveRecord = context => {
       try {
-        console.log(`\${SCRIPT_FILENAME}: saveRecord:`, context);
         const {currentRecord} = context;
         
       } catch (e) {

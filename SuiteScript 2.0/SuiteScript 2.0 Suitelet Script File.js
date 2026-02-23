@@ -21,14 +21,6 @@ define([],
      */
     function onRequest(context) {
       try {
-        log.debug('onRequest', {
-          request: {
-            clientIpAddress: context.request.clientIpAddress,
-            url: context.request.url,
-            method: context.request.method,
-            parameters: context.request.parameters,
-          },
-        });
         
       } catch (e) {
         log.error('onRequest', JSON.parse(JSON.stringify(e)));

@@ -22,7 +22,6 @@ define([],
     function getInputData(context) {
       try {
         log.audit('Started', 'Started');
-        log.debug('getInputData', context);
         
       } catch (e) {
         log.error('getInputData', JSON.parse(JSON.stringify(e)));
@@ -35,7 +34,6 @@ define([],
      */
     function map(context) {
       try {
-        log.debug('map', context);
         
       } catch (e) {
         log.error('map', JSON.parse(JSON.stringify(e)));
@@ -48,7 +46,6 @@ define([],
      */
     function reduce(context) {
       try {
-        log.debug('reduce', context);
         
       } catch (e) {
         log.error('reduce', JSON.parse(JSON.stringify(e)));
@@ -61,7 +58,6 @@ define([],
      */
     function summarize(context) {
       try {
-        log.debug('summarize', context);
         
       } catch (e) {
         log.error('summarize', JSON.parse(JSON.stringify(e)));

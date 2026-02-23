@@ -21,10 +21,6 @@ define([],
      */
     function render(params) {
       try {
-        log.debug('render', {
-          column: params.column,
-          entity: params.entity,
-        });
         
       } catch (e) {
         log.error('render', JSON.parse(JSON.stringify(e)));

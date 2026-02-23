@@ -17,8 +17,6 @@ const execute: EntryPoints.Scheduled.execute = context => {
     log.audit('Started', 'Started');
     const {type} = context;
     
-    log.debug('execute', `Type: ${type}`);
-    
   } catch (e) {
     log.error('execute', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   } finally {

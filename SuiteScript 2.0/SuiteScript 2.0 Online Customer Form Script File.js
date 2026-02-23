@@ -27,7 +27,6 @@ define([],
      */
     function pageInit(context) {
       try {
-        console.log(SCRIPT_FILENAME + ': pageInit:', context);
         
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': pageInit:', e);
@@ -41,7 +40,6 @@ define([],
      */
     function validateField(context) {
       try {
-        console.log(SCRIPT_FILENAME + ': validateField:', context);
         
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': validateField:', e);
@@ -56,7 +54,6 @@ define([],
      */
     function fieldChanged(context) {
       try {
-        console.log(SCRIPT_FILENAME + ': fieldChanged:', context);
         
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': fieldChanged:', e);
@@ -70,7 +67,6 @@ define([],
      */
     function saveRecord(context) {
       try {
-        console.log(SCRIPT_FILENAME + ': saveRecord:', context);
         
       } catch (e) {
         console.error(SCRIPT_FILENAME + ': saveRecord:', e);

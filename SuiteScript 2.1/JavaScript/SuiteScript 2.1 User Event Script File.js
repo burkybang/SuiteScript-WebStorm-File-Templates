@@ -23,8 +23,6 @@ define([],
       try {
         const {type, newRecord, form, request} = context;
         
-        log.debug('beforeLoad', {type});
-        
       } catch (e) {
         log.error('beforeLoad', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
@@ -38,8 +36,6 @@ define([],
       try {
         const {type, newRecord, oldRecord} = context;
         
-        log.debug('beforeSubmit', {type});
-        
       } catch (e) {
         log.error('beforeSubmit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
       }
@@ -52,8 +48,6 @@ define([],
     const afterSubmit = context => {
       try {
         const {type, newRecord, oldRecord} = context;
-        
-        log.debug('afterSubmit', {type});
         
       } catch (e) {
         log.error('afterSubmit', e.toJSON ? e : (e.stack ? e.stack : e.toString()));

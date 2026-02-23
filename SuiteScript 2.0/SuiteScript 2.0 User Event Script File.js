@@ -21,7 +21,6 @@ define([],
      */
     function beforeLoad(context) {
       try {
-        log.debug('beforeLoad', {type: context.type});
         
       } catch (e) {
         log.error('beforeLoad', JSON.parse(JSON.stringify(e)));
@@ -34,7 +33,6 @@ define([],
      */
     function beforeSubmit(context) {
       try {
-        log.debug('beforeSubmit', {type: context.type});
         
       } catch (e) {
         log.error('beforeSubmit', JSON.parse(JSON.stringify(e)));
@@ -47,7 +45,6 @@ define([],
      */
     function afterSubmit(context) {
       try {
-        log.debug('afterSubmit', {type: context.type});
         
       } catch (e) {
         log.error('afterSubmit', JSON.parse(JSON.stringify(e)));

@@ -14,7 +14,6 @@ import * as log from 'N/log';
 
 const each: EntryPoints.MassUpdate.each = params => {
   try {
-    log.debug('each', params);
     const {id, type} = params;
     
   } catch (e) {

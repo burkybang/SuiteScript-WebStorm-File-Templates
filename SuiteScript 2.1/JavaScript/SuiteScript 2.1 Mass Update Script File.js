@@ -21,7 +21,6 @@ define([],
      */
     const each = params => {
       try {
-        log.debug('each', params);
         const {id, type} = params;
         
       } catch (e) {

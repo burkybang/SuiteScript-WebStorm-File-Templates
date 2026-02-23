@@ -16,8 +16,6 @@ const render: EntryPoints.Portlet.render = params => {
   try {
     const {column, entity, portlet} = params;
     
-    log.debug('render', {column, entity});
-    
   } catch (e) {
     log.error('render', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
   }

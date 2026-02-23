@@ -21,7 +21,6 @@ define([],
      */
     const customizeGlImpact = context => {
       try {
-        log.debug('customizeGlImpact', context);
         
       } catch (e) {
         log.error('customizeGlImpact', e.toJSON ? e : (e.stack ? e.stack : e.toString()));
